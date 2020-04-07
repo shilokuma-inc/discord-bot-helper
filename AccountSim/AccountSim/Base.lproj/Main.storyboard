@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,91 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AccountSim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmN-ep-9dB">
+                                <rect key="frame" x="216" y="310" width="178" height="123"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="ログインの練習">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ログインの練習関数:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2KJ-5C-bAr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPs-uW-nxP">
+                                <rect key="frame" x="216" y="459" width="178" height="123"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="初めから自分で練習">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="初めから自分で練習関数:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfg-iV-jgI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngz-gN-kw0">
+                                <rect key="frame" x="20" y="310" width="177" height="123"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="PvT-1S-zn8"/>
+                                    <constraint firstAttribute="width" constant="177" id="n0x-Qb-79P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="新規登録の練習">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="新規登録の練習関数:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQf-6M-Hg4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ws-jX-F6m">
+                                <rect key="frame" x="20" y="459" width="177" height="123"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="パスワードを忘れた時の練習">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="パスワードを忘れた時の練習関数:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QLv-oS-XMO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ngz-gN-kw0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="266" id="6f3-pF-BLH"/>
+                            <constraint firstItem="5Ws-jX-F6m" firstAttribute="top" secondItem="ngz-gN-kw0" secondAttribute="bottom" constant="26" id="7pg-LN-oKX"/>
+                            <constraint firstItem="5Ws-jX-F6m" firstAttribute="firstBaseline" secondItem="DPs-uW-nxP" secondAttribute="firstBaseline" id="7ub-Sn-mOS"/>
+                            <constraint firstItem="ngz-gN-kw0" firstAttribute="leading" secondItem="5Ws-jX-F6m" secondAttribute="leading" id="8EM-mg-Lus"/>
+                            <constraint firstItem="ngz-gN-kw0" firstAttribute="top" secondItem="tmN-ep-9dB" secondAttribute="top" id="A3n-i5-Zpa"/>
+                            <constraint firstItem="tmN-ep-9dB" firstAttribute="leading" secondItem="DPs-uW-nxP" secondAttribute="leading" id="CT2-hU-lq0"/>
+                            <constraint firstItem="5Ws-jX-F6m" firstAttribute="top" secondItem="DPs-uW-nxP" secondAttribute="top" id="GCc-kZ-Krs"/>
+                            <constraint firstItem="ngz-gN-kw0" firstAttribute="firstBaseline" secondItem="tmN-ep-9dB" secondAttribute="firstBaseline" id="GEd-1j-dqX"/>
+                            <constraint firstItem="tmN-ep-9dB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ScI-Jc-veI"/>
+                            <constraint firstItem="tmN-ep-9dB" firstAttribute="trailing" secondItem="DPs-uW-nxP" secondAttribute="trailing" id="SzR-Ah-xf4"/>
+                            <constraint firstItem="ngz-gN-kw0" firstAttribute="trailing" secondItem="5Ws-jX-F6m" secondAttribute="trailing" id="aLI-Wy-9dj"/>
+                            <constraint firstItem="ngz-gN-kw0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cKY-vE-wC7"/>
+                            <constraint firstItem="tmN-ep-9dB" firstAttribute="leading" secondItem="ngz-gN-kw0" secondAttribute="trailing" constant="19" id="dCc-nx-lfB"/>
+                            <constraint firstItem="5Ws-jX-F6m" firstAttribute="baseline" secondItem="DPs-uW-nxP" secondAttribute="baseline" id="eMw-ct-JEh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Ws-jX-F6m" secondAttribute="bottom" constant="280" id="tFZ-kt-iW1"/>
+                            <constraint firstItem="ngz-gN-kw0" firstAttribute="baseline" secondItem="tmN-ep-9dB" secondAttribute="baseline" id="tVf-dJ-r6y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="パスワードを忘れた時の練習ボタン" destination="5Ws-jX-F6m" id="jhK-0F-sVm"/>
+                        <outlet property="ログインの練習ボタン" destination="tmN-ep-9dB" id="6fZ-bv-SOy"/>
+                        <outlet property="初めから自分で練習ボタン" destination="DPs-uW-nxP" id="tCa-ZV-P1K"/>
+                        <outlet property="新規登録の練習ボタン" destination="ngz-gN-kw0" id="zRP-oc-mTZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBDAE92D243D2A4B00FA5DA2 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDAE92B243D2A4B00FA5DA2 /* HomeViewController.storyboard */; };
+		DBDAE92E243D2A4B00FA5DA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDAE92C243D2A4B00FA5DA2 /* HomeViewController.swift */; };
 		E1D84313243B813F004137EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D84312243B813F004137EB /* AppDelegate.swift */; };
 		E1D84315243B813F004137EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D84314243B813F004137EB /* SceneDelegate.swift */; };
 		E1D84317243B813F004137EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D84316243B813F004137EB /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DBDAE92B243D2A4B00FA5DA2 /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeViewController.storyboard; path = ../HomeViewController.storyboard; sourceTree = "<group>"; };
+		DBDAE92C243D2A4B00FA5DA2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		E1D8430F243B813F004137EB /* AccountSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D84312243B813F004137EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D84314243B813F004137EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DBDAE92A243D2A3A00FA5DA2 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBDAE92B243D2A4B00FA5DA2 /* HomeViewController.storyboard */,
+				DBDAE92C243D2A4B00FA5DA2 /* HomeViewController.swift */,
+			);
+			name = HomeViewController;
+			path = ../../../../../../.Trash/HomeViewController;
+			sourceTree = "<group>";
+		};
 		E1D84306243B813F004137EB = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +113,7 @@
 		E1D84311243B813F004137EB /* AccountSim */ = {
 			isa = PBXGroup;
 			children = (
+				DBDAE92A243D2A3A00FA5DA2 /* HomeViewController */,
 				E1D84312243B813F004137EB /* AppDelegate.swift */,
 				E1D84314243B813F004137EB /* SceneDelegate.swift */,
 				E1D84316243B813F004137EB /* ViewController.swift */,
@@ -232,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBDAE92D243D2A4B00FA5DA2 /* HomeViewController.storyboard in Resources */,
 				E1D8431F243B8140004137EB /* LaunchScreen.storyboard in Resources */,
 				E1D8431C243B8140004137EB /* Assets.xcassets in Resources */,
 				E1D8431A243B813F004137EB /* Main.storyboard in Resources */,
@@ -262,6 +278,7 @@
 				E1D84317243B813F004137EB /* ViewController.swift in Sources */,
 				E1D84313243B813F004137EB /* AppDelegate.swift in Sources */,
 				E1D84315243B813F004137EB /* SceneDelegate.swift in Sources */,
+				DBDAE92E243D2A4B00FA5DA2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
