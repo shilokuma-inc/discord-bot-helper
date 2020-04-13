@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "f_f_business_4_s512_f_business_4_2bg.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "f_f_business_4_s512_f_business_4_2bg-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "f_f_business_4_s512_f_business_4_2bg-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
