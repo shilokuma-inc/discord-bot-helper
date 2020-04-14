@@ -8,10 +8,8 @@
 
 import UIKit
 
-public var 練習モード: Int = 0
-
 class ViewController: UIViewController {
-    let homeViewController = UIStoryboard(name: "HomeViewController", bundle: nil).instantiateInitialViewController()
+    let homeBaseViewController = UIStoryboard(name: "HomeBaseViewController", bundle: nil).instantiateInitialViewController()
     
     @IBOutlet weak var 新規登録の練習ボタン: UIButton!
     @IBOutlet weak var ログインの練習ボタン: UIButton!
@@ -27,8 +25,8 @@ class ViewController: UIViewController {
         transition.type = CATransitionType.reveal
         transition.subtype = CATransitionSubtype.fromTop
         view.window!.layer.add(transition, forKey: kCATransition)
-        homeViewController?.modalPresentationStyle = .fullScreen
-        self.present(homeViewController!, animated: false)
+        homeBaseViewController?.modalPresentationStyle = .fullScreen
+        self.present(homeBaseViewController!, animated: false)
     }
     @IBAction func ログインの練習関数(_ sender: Any) {
         練習モード = 2
@@ -39,8 +37,8 @@ class ViewController: UIViewController {
         transition.type = CATransitionType.reveal
         transition.subtype = CATransitionSubtype.fromTop
         view.window!.layer.add(transition, forKey: kCATransition)
-        homeViewController?.modalPresentationStyle = .fullScreen
-        self.present(homeViewController!, animated: false)
+        homeBaseViewController?.modalPresentationStyle = .fullScreen
+        self.present(homeBaseViewController!, animated: false)
     }
     @IBAction func パスワードを忘れた時の練習関数(_ sender: Any) {
         練習モード = 3
@@ -51,8 +49,8 @@ class ViewController: UIViewController {
         transition.type = CATransitionType.reveal
         transition.subtype = CATransitionSubtype.fromTop
         view.window!.layer.add(transition, forKey: kCATransition)
-        homeViewController?.modalPresentationStyle = .fullScreen
-        self.present(homeViewController!, animated: false)
+        homeBaseViewController?.modalPresentationStyle = .fullScreen
+        self.present(homeBaseViewController!, animated: false)
     }
     @IBAction func 初めから自分で練習関数(_ sender: Any) {
         練習モード = 4
@@ -63,8 +61,8 @@ class ViewController: UIViewController {
         transition.type = CATransitionType.reveal
         transition.subtype = CATransitionSubtype.fromTop
         view.window!.layer.add(transition, forKey: kCATransition)
-        homeViewController?.modalPresentationStyle = .fullScreen
-        self.present(homeViewController!, animated: false)
+        homeBaseViewController?.modalPresentationStyle = .fullScreen
+        self.present(homeBaseViewController!, animated: false)
     }
     
     

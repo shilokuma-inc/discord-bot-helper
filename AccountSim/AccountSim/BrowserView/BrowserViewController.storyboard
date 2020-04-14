@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kUP-wC-qBE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BrowserViewController-->
+        <scene sceneID="7gu-qp-Uhj">
+            <objects>
+                <viewController storyboardIdentifier="BrowserViewController" title="BrowserViewController" id="kUP-wC-qBE" customClass="BrowserViewController" customModule="AccountSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eP9-K2-FkX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYH-QH-Gbq">
+                                <rect key="frame" x="0.0" y="44" width="453" height="936"/>
+                                <connections>
+                                    <segue destination="7NI-XQ-tX9" kind="embed" id="svz-ew-Fda"/>
+                                </connections>
+                            </containerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skn-NC-Tbr">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Item" image="chevron.left.circle" catalog="system" id="CHU-xs-hiK">
+                                        <connections>
+                                            <action selector="戻るボタン:" destination="kUP-wC-qBE" id="vJJ-Sn-Juc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="chevron.right.circle" catalog="system" id="eaX-vJ-071">
+                                        <connections>
+                                            <action selector="進むボタン:" destination="kUP-wC-qBE" id="gNV-PR-XYM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAT-zM-NMv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Google Chrome" id="FPh-WF-aDb"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TAT-zM-NMv" firstAttribute="top" secondItem="AjL-Jb-Dzq" secondAttribute="top" id="8hl-JA-3am"/>
+                            <constraint firstAttribute="trailing" secondItem="Skn-NC-Tbr" secondAttribute="trailing" id="9PG-5L-Xtw"/>
+                            <constraint firstItem="TAT-zM-NMv" firstAttribute="trailing" secondItem="Skn-NC-Tbr" secondAttribute="trailing" id="Hyp-FA-Cma"/>
+                            <constraint firstItem="jYH-QH-Gbq" firstAttribute="leading" secondItem="AjL-Jb-Dzq" secondAttribute="leading" id="Xef-rf-0Dw"/>
+                            <constraint firstItem="Skn-NC-Tbr" firstAttribute="leading" secondItem="eP9-K2-FkX" secondAttribute="leading" id="bGS-hh-7Nn"/>
+                            <constraint firstItem="jYH-QH-Gbq" firstAttribute="top" secondItem="AjL-Jb-Dzq" secondAttribute="top" id="cKg-Xj-fbV"/>
+                            <constraint firstItem="TAT-zM-NMv" firstAttribute="leading" secondItem="Skn-NC-Tbr" secondAttribute="leading" id="ki8-Ta-qLy"/>
+                            <constraint firstAttribute="bottom" secondItem="Skn-NC-Tbr" secondAttribute="bottom" constant="34" id="ls5-vS-HBX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="jYH-QH-Gbq" secondAttribute="bottom" constant="-118" id="xB5-g3-edC"/>
+                            <constraint firstItem="jYH-QH-Gbq" firstAttribute="trailing" secondItem="AjL-Jb-Dzq" secondAttribute="trailing" constant="39" id="ylC-iX-505"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AjL-Jb-Dzq"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="jYH-QH-Gbq" id="kiz-3g-hAp"/>
+                        <outlet property="戻る" destination="CHU-xs-hiK" id="Hvt-sI-1vu"/>
+                        <outlet property="進む" destination="eaX-vJ-071" id="yoU-2f-2vm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNy-o7-qZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479.71014492753625" y="-189.50892857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cuy-Vl-4sY">
+            <objects>
+                <viewController id="7NI-XQ-tX9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t6Q-Id-aw1">
+                        <rect key="frame" x="0.0" y="0.0" width="453" height="936"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kMj-1b-nkN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-478" y="538"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left.circle" catalog="system" width="128" height="121"/>
+        <image name="chevron.right.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

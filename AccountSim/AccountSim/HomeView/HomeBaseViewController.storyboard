@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OwE-Sk-w7e">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeBaseViewController-->
+        <scene sceneID="ZPj-as-IJO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QfE-OB-Ndc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="HomeBaseViewController" title="HomeBaseViewController" id="OwE-Sk-w7e" customClass="HomeBaseViewController" customModule="AccountSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l10-7o-Zvj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhI-YF-heK">
+                                <rect key="frame" x="0.0" y="88" width="375" height="646"/>
+                                <connections>
+                                    <segue destination="FEQ-NR-F2G" kind="embed" id="DVL-aP-VWA"/>
+                                </connections>
+                            </containerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EW6-q8-4Hv">
+                                <rect key="frame" x="0.0" y="734" width="375" height="49"/>
+                                <items>
+                                    <barButtonItem title="Item" id="hmV-4S-KzF"/>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOu-XP-Y0Y">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="vfh-a1-N3R"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dhI-YF-heK" firstAttribute="leading" secondItem="EW6-q8-4Hv" secondAttribute="leading" id="0gz-Yd-kKy"/>
+                            <constraint firstItem="EW6-q8-4Hv" firstAttribute="top" secondItem="dhI-YF-heK" secondAttribute="bottom" id="1nS-jg-JpL"/>
+                            <constraint firstItem="dhI-YF-heK" firstAttribute="centerX" secondItem="l10-7o-Zvj" secondAttribute="centerX" id="BUk-DK-cKI"/>
+                            <constraint firstItem="oOu-XP-Y0Y" firstAttribute="top" secondItem="k1U-Yu-1zE" secondAttribute="top" id="O8a-hQ-NwN"/>
+                            <constraint firstItem="dhI-YF-heK" firstAttribute="leading" secondItem="k1U-Yu-1zE" secondAttribute="leading" id="R5O-AS-Pkl"/>
+                            <constraint firstItem="dhI-YF-heK" firstAttribute="trailing" secondItem="EW6-q8-4Hv" secondAttribute="trailing" id="RhW-61-zE2"/>
+                            <constraint firstItem="oOu-XP-Y0Y" firstAttribute="trailing" secondItem="dhI-YF-heK" secondAttribute="trailing" id="VJH-Og-02K"/>
+                            <constraint firstAttribute="bottom" secondItem="dhI-YF-heK" secondAttribute="bottom" constant="78" id="WNN-MA-Dnl"/>
+                            <constraint firstItem="oOu-XP-Y0Y" firstAttribute="leading" secondItem="dhI-YF-heK" secondAttribute="leading" id="jEU-1r-abh"/>
+                            <constraint firstItem="dhI-YF-heK" firstAttribute="top" secondItem="l10-7o-Zvj" secondAttribute="top" constant="88" id="xJM-pd-ayp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k1U-Yu-1zE"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeContainerView" destination="dhI-YF-heK" id="spB-Qw-jN7"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="184.80000000000001" y="36.945812807881772"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="wri-9r-kDr">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" id="FEQ-NR-F2G" customClass="HomeViewController" customModule="AccountSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oh8-U4-bj2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper1" translatesAutoresizingMaskIntoConstraints="NO" id="7Rm-eO-gwO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="SmP-ob-Sqc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-r9-IJ8">
+                                <rect key="frame" x="15" y="84" width="80.333333333333329" height="80.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Eyk-r9-IJ8" secondAttribute="height" multiplier="1:1" id="cfs-bT-te6"/>
+                                </constraints>
+                                <state key="normal" image="settingsIcon"/>
+                                <connections>
+                                    <action selector="設定アイコンボタン:" destination="OwE-Sk-w7e" eventType="touchUpInside" id="DSo-QH-TVW"/>
+                                    <action selector="設定アイコンボタン:" destination="FEQ-NR-F2G" eventType="touchUpInside" id="fvd-Jj-0fW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucQ-z3-hPj">
+                                <rect key="frame" x="103.33333333333334" y="84" width="80.333333333333343" height="80.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ucQ-z3-hPj" secondAttribute="height" multiplier="1:1" id="fVi-jZ-gsx"/>
+                                </constraints>
+                                <state key="normal" image="mailIcon"/>
+                                <connections>
+                                    <action selector="メールアイコンボタン:" destination="FEQ-NR-F2G" eventType="touchUpInside" id="MlD-si-IyI"/>
+                                    <action selector="メールアイコンボタン:" destination="OwE-Sk-w7e" eventType="touchUpInside" id="r14-aQ-u6F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir2-oH-eL2">
+                                <rect key="frame" x="191.66666666666666" y="84" width="80.333333333333343" height="80.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ir2-oH-eL2" secondAttribute="height" multiplier="1:1" id="M0S-aC-3Bl"/>
+                                </constraints>
+                                <state key="normal" image="browserIcon"/>
+                                <connections>
+                                    <action selector="ブラウザアイコンボタン:" destination="FEQ-NR-F2G" eventType="touchUpInside" id="8MW-Mn-XiM"/>
+                                    <action selector="ブラウザアイコンボタン:" destination="OwE-Sk-w7e" eventType="touchUpInside" id="Wh8-90-Qec"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSv-Fd-U9c">
+                                <rect key="frame" x="280" y="84" width="80.333333333333314" height="80.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hSv-Fd-U9c" secondAttribute="height" multiplier="1:1" id="Guv-gT-Chh"/>
+                                </constraints>
+                                <state key="normal" image="smartpayIcon"/>
+                                <connections>
+                                    <action selector="smartPayアイコンボタン:" destination="FEQ-NR-F2G" eventType="touchUpInside" id="Qff-6Q-krh"/>
+                                    <action selector="smartPayアイコンボタン:" destination="OwE-Sk-w7e" eventType="touchUpInside" id="eBz-Gk-f1c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Eyk-r9-IJ8" firstAttribute="top" secondItem="oh8-U4-bj2" secondAttribute="topMargin" constant="40" id="4Uq-Qd-hkR"/>
+                            <constraint firstItem="hSv-Fd-U9c" firstAttribute="leading" secondItem="Ir2-oH-eL2" secondAttribute="trailing" constant="8" id="AYI-1F-TWW"/>
+                            <constraint firstItem="Ir2-oH-eL2" firstAttribute="top" secondItem="hSv-Fd-U9c" secondAttribute="top" id="Bek-sJ-Kzd"/>
+                            <constraint firstItem="Eyk-r9-IJ8" firstAttribute="bottom" secondItem="ucQ-z3-hPj" secondAttribute="bottom" id="Jlc-49-Gtk"/>
+                            <constraint firstItem="Ir2-oH-eL2" firstAttribute="width" secondItem="Ir2-oH-eL2" secondAttribute="height" multiplier="1:1" id="KBa-c5-Avq"/>
+                            <constraint firstItem="ucQ-z3-hPj" firstAttribute="bottom" secondItem="Ir2-oH-eL2" secondAttribute="bottom" id="RjV-St-rHA"/>
+                            <constraint firstItem="7Rm-eO-gwO" firstAttribute="leading" secondItem="oh8-U4-bj2" secondAttribute="leadingMargin" constant="-16" id="Rrp-vF-gqS"/>
+                            <constraint firstItem="7Rm-eO-gwO" firstAttribute="top" secondItem="oh8-U4-bj2" secondAttribute="topMargin" constant="-44" id="WdL-1B-vhN"/>
+                            <constraint firstItem="hSv-Fd-U9c" firstAttribute="width" secondItem="hSv-Fd-U9c" secondAttribute="height" multiplier="1:1" id="bMf-jW-kS6"/>
+                            <constraint firstItem="7Rm-eO-gwO" firstAttribute="centerX" secondItem="oh8-U4-bj2" secondAttribute="centerX" id="bkg-yv-jfJ"/>
+                            <constraint firstItem="7Rm-eO-gwO" firstAttribute="centerY" secondItem="oh8-U4-bj2" secondAttribute="centerY" id="dwh-jh-HrK"/>
+                            <constraint firstItem="Eyk-r9-IJ8" firstAttribute="width" secondItem="Eyk-r9-IJ8" secondAttribute="height" multiplier="1:1" id="j9C-ty-jAL"/>
+                            <constraint firstItem="ucQ-z3-hPj" firstAttribute="top" secondItem="Ir2-oH-eL2" secondAttribute="top" id="k0e-bS-03O"/>
+                            <constraint firstItem="Ir2-oH-eL2" firstAttribute="leading" secondItem="ucQ-z3-hPj" secondAttribute="trailing" constant="8" id="ktS-uz-JYB"/>
+                            <constraint firstItem="Ir2-oH-eL2" firstAttribute="bottom" secondItem="hSv-Fd-U9c" secondAttribute="bottom" id="mGc-rb-5uq"/>
+                            <constraint firstItem="Eyk-r9-IJ8" firstAttribute="leading" secondItem="oh8-U4-bj2" secondAttribute="leadingMargin" constant="-1" id="pG5-Wl-MLJ"/>
+                            <constraint firstItem="ucQ-z3-hPj" firstAttribute="width" secondItem="ucQ-z3-hPj" secondAttribute="height" multiplier="1:1" id="puG-y1-G1Y"/>
+                            <constraint firstItem="Eyk-r9-IJ8" firstAttribute="top" secondItem="ucQ-z3-hPj" secondAttribute="top" id="skk-U1-l1n"/>
+                            <constraint firstItem="ucQ-z3-hPj" firstAttribute="leading" secondItem="Eyk-r9-IJ8" secondAttribute="trailing" constant="8" id="xCp-dd-GER"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hSv-Fd-U9c" secondAttribute="trailing" constant="-1.3333333333333144" id="xWd-CI-YMf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="壁紙画像" destination="7Rm-eO-gwO" id="WJl-sr-75Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOk-JY-1Rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="709"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="browserIcon" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="mailIcon" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="settingsIcon" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="smartpayIcon" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="wallpaper1" width="466" height="940"/>
+    </resources>
+</document>

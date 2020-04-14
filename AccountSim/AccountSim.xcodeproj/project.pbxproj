@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB14B5BA24443E17004F3F75 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB14B5B924443E17004F3F75 /* HomeViewController.storyboard */; };
+		DB14B5BA24443E17004F3F75 /* HomeBaseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB14B5B924443E17004F3F75 /* HomeBaseViewController.storyboard */; };
 		DB14B5BC24443E29004F3F75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14B5BB24443E29004F3F75 /* HomeViewController.swift */; };
+		DB14B5BE2444501B004F3F75 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14B5BD2444501B004F3F75 /* Values.swift */; };
+		DB14B5C424445455004F3F75 /* BrowserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB14B5C324445455004F3F75 /* BrowserViewController.storyboard */; };
+		DB14B5C92444566B004F3F75 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14B5C82444566B004F3F75 /* BrowserViewController.swift */; };
+		DB14B5CB244471A2004F3F75 /* HomeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14B5CA244471A2004F3F75 /* HomeBaseViewController.swift */; };
 		E1D84313243B813F004137EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D84312243B813F004137EB /* AppDelegate.swift */; };
 		E1D84315243B813F004137EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D84314243B813F004137EB /* SceneDelegate.swift */; };
 		E1D84317243B813F004137EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D84316243B813F004137EB /* ViewController.swift */; };
@@ -37,8 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DB14B5B924443E17004F3F75 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		DB14B5B924443E17004F3F75 /* HomeBaseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeBaseViewController.storyboard; sourceTree = "<group>"; };
 		DB14B5BB24443E29004F3F75 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB14B5BD2444501B004F3F75 /* Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
+		DB14B5C324445455004F3F75 /* BrowserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BrowserViewController.storyboard; sourceTree = "<group>"; };
+		DB14B5C82444566B004F3F75 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		DB14B5CA244471A2004F3F75 /* HomeBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseViewController.swift; sourceTree = "<group>"; };
 		E1D8430F243B813F004137EB /* AccountSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D84312243B813F004137EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D84314243B813F004137EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,10 +91,41 @@
 		DB14B5B824443E05004F3F75 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				DB14B5B924443E17004F3F75 /* HomeViewController.storyboard */,
+				DB14B5B924443E17004F3F75 /* HomeBaseViewController.storyboard */,
+				DB14B5CA244471A2004F3F75 /* HomeBaseViewController.swift */,
 				DB14B5BB24443E29004F3F75 /* HomeViewController.swift */,
 			);
 			path = HomeView;
+			sourceTree = "<group>";
+		};
+		DB14B5BF244453BC004F3F75 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
+		DB14B5C0244453CC004F3F75 /* MailView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MailView;
+			sourceTree = "<group>";
+		};
+		DB14B5C1244453D8004F3F75 /* SmartPayView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SmartPayView;
+			sourceTree = "<group>";
+		};
+		DB14B5C2244453E9004F3F75 /* BrowserView */ = {
+			isa = PBXGroup;
+			children = (
+				DB14B5C324445455004F3F75 /* BrowserViewController.storyboard */,
+				DB14B5C82444566B004F3F75 /* BrowserViewController.swift */,
+			);
+			path = BrowserView;
 			sourceTree = "<group>";
 		};
 		E1D84306243B813F004137EB = {
@@ -112,6 +151,10 @@
 		E1D84311243B813F004137EB /* AccountSim */ = {
 			isa = PBXGroup;
 			children = (
+				DB14B5C2244453E9004F3F75 /* BrowserView */,
+				DB14B5C1244453D8004F3F75 /* SmartPayView */,
+				DB14B5C0244453CC004F3F75 /* MailView */,
+				DB14B5BF244453BC004F3F75 /* SettingView */,
 				DB14B5B824443E05004F3F75 /* HomeView */,
 				E1D84312243B813F004137EB /* AppDelegate.swift */,
 				E1D84314243B813F004137EB /* SceneDelegate.swift */,
@@ -120,6 +163,7 @@
 				E1D8431B243B8140004137EB /* Assets.xcassets */,
 				E1D8431D243B8140004137EB /* LaunchScreen.storyboard */,
 				E1D84320243B8140004137EB /* Info.plist */,
+				DB14B5BD2444501B004F3F75 /* Values.swift */,
 			);
 			path = AccountSim;
 			sourceTree = "<group>";
@@ -246,7 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB14B5BA24443E17004F3F75 /* HomeViewController.storyboard in Resources */,
+				DB14B5C424445455004F3F75 /* BrowserViewController.storyboard in Resources */,
+				DB14B5BA24443E17004F3F75 /* HomeBaseViewController.storyboard in Resources */,
 				E1D8431F243B8140004137EB /* LaunchScreen.storyboard in Resources */,
 				E1D8431C243B8140004137EB /* Assets.xcassets in Resources */,
 				E1D8431A243B813F004137EB /* Main.storyboard in Resources */,
@@ -275,7 +320,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D84317243B813F004137EB /* ViewController.swift in Sources */,
+				DB14B5C92444566B004F3F75 /* BrowserViewController.swift in Sources */,
 				E1D84313243B813F004137EB /* AppDelegate.swift in Sources */,
+				DB14B5BE2444501B004F3F75 /* Values.swift in Sources */,
+				DB14B5CB244471A2004F3F75 /* HomeBaseViewController.swift in Sources */,
 				E1D84315243B813F004137EB /* SceneDelegate.swift in Sources */,
 				DB14B5BC24443E29004F3F75 /* HomeViewController.swift in Sources */,
 			);
