@@ -1,3 +1,3 @@
-# AccountSim
+# discord-bot-launcher
 
-なんか作ろう！(適当)
+Discordでbot経由で送信できるアプリ
