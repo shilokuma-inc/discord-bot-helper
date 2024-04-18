@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F2B59892BD18437003C0377 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4F2B59882BD18437003C0377 /* Alamofire */; };
+		4F2B598B2BD18437003C0377 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4F2B598A2BD18437003C0377 /* AlamofireDynamic */; };
 		4F5072B82BCF901E0005D352 /* discord_bot_helperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */; };
 		4F5072BA2BCF901E0005D352 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5072B92BCF901E0005D352 /* ContentView.swift */; };
 		4F5072BC2BCF901F0005D352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5072BB2BCF901F0005D352 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2B59892BD18437003C0377 /* Alamofire in Frameworks */,
+				4F2B598B2BD18437003C0377 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,10 @@
 			dependencies = (
 			);
 			name = "discord-bot-helper";
+			packageProductDependencies = (
+				4F2B59882BD18437003C0377 /* Alamofire */,
+				4F2B598A2BD18437003C0377 /* AlamofireDynamic */,
+			);
 			productName = "discord-bot-helper";
 			productReference = 4F5072B42BCF901E0005D352 /* discord-bot-helper.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 4F5072AB2BCF901E0005D352;
+			packageReferences = (
+				4F2B59872BD18437003C0377 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 4F5072B52BCF901E0005D352 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,6 +370,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F2B59872BD18437003C0377 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F2B59882BD18437003C0377 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F2B59872BD18437003C0377 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4F2B598A2BD18437003C0377 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F2B59872BD18437003C0377 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F5072AC2BCF901E0005D352 /* Project object */;
 }
