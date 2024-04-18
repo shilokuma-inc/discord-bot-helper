@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F5072B82BCF901E0005D352 /* discord_bot_launcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5072B72BCF901E0005D352 /* discord_bot_launcherApp.swift */; };
+		4F5072B82BCF901E0005D352 /* discord_bot_helperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */; };
 		4F5072BA2BCF901E0005D352 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5072B92BCF901E0005D352 /* ContentView.swift */; };
 		4F5072BC2BCF901F0005D352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5072BB2BCF901F0005D352 /* Assets.xcassets */; };
 		4F5072C02BCF901F0005D352 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5072BF2BCF901F0005D352 /* Preview Assets.xcassets */; };
@@ -15,10 +15,10 @@
 
 /* Begin PBXFileReference section */
 		4F5072B42BCF901E0005D352 /* discord-bot-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "discord-bot-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F5072B72BCF901E0005D352 /* discord_bot_launcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discord_bot_launcherApp.swift; sourceTree = "<group>"; };
+		4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discord_bot_helperApp.swift; sourceTree = "<group>"; };
 		4F5072B92BCF901E0005D352 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4F5072BB2BCF901F0005D352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4F5072BD2BCF901F0005D352 /* discord_bot_launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = discord_bot_launcher.entitlements; sourceTree = "<group>"; };
+		4F5072BD2BCF901F0005D352 /* discord_bot_helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = discord_bot_helper.entitlements; sourceTree = "<group>"; };
 		4F5072BF2BCF901F0005D352 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,10 +52,10 @@
 		4F5072B62BCF901E0005D352 /* discord-bot-helper */ = {
 			isa = PBXGroup;
 			children = (
-				4F5072B72BCF901E0005D352 /* discord_bot_launcherApp.swift */,
+				4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */,
 				4F5072B92BCF901E0005D352 /* ContentView.swift */,
 				4F5072BB2BCF901F0005D352 /* Assets.xcassets */,
-				4F5072BD2BCF901F0005D352 /* discord_bot_launcher.entitlements */,
+				4F5072BD2BCF901F0005D352 /* discord_bot_helper.entitlements */,
 				4F5072BE2BCF901F0005D352 /* Preview Content */,
 			);
 			path = "discord-bot-helper";
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F5072BA2BCF901E0005D352 /* ContentView.swift in Sources */,
-				4F5072B82BCF901E0005D352 /* discord_bot_launcherApp.swift in Sources */,
+				4F5072B82BCF901E0005D352 /* discord_bot_helperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +266,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "discord-bot-helper/discord_bot_launcher.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "discord-bot-helper/discord_bot_helper.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"discord-bot-helper/Preview Content\"";
@@ -304,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "discord-bot-helper/discord_bot_launcher.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "discord-bot-helper/discord_bot_helper.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"discord-bot-helper/Preview Content\"";
