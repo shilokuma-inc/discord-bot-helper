@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F5072B42BCF901E0005D352 /* discord-bot-launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "discord-bot-launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5072B42BCF901E0005D352 /* discord-bot-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "discord-bot-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5072B72BCF901E0005D352 /* discord_bot_launcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discord_bot_launcherApp.swift; sourceTree = "<group>"; };
 		4F5072B92BCF901E0005D352 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4F5072BB2BCF901F0005D352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		4F5072AB2BCF901E0005D352 = {
 			isa = PBXGroup;
 			children = (
-				4F5072B62BCF901E0005D352 /* discord-bot-launcher */,
+				4F5072B62BCF901E0005D352 /* discord-bot-helper */,
 				4F5072B52BCF901E0005D352 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,12 +44,12 @@
 		4F5072B52BCF901E0005D352 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F5072B42BCF901E0005D352 /* discord-bot-launcher.app */,
+				4F5072B42BCF901E0005D352 /* discord-bot-helper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4F5072B62BCF901E0005D352 /* discord-bot-launcher */ = {
+		4F5072B62BCF901E0005D352 /* discord-bot-helper */ = {
 			isa = PBXGroup;
 			children = (
 				4F5072B72BCF901E0005D352 /* discord_bot_launcherApp.swift */,
@@ -58,7 +58,7 @@
 				4F5072BD2BCF901F0005D352 /* discord_bot_launcher.entitlements */,
 				4F5072BE2BCF901F0005D352 /* Preview Content */,
 			);
-			path = "discord-bot-launcher";
+			path = "discord-bot-helper";
 			sourceTree = "<group>";
 		};
 		4F5072BE2BCF901F0005D352 /* Preview Content */ = {
@@ -72,9 +72,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F5072B32BCF901E0005D352 /* discord-bot-launcher */ = {
+		4F5072B32BCF901E0005D352 /* discord-bot-helper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F5072C32BCF901F0005D352 /* Build configuration list for PBXNativeTarget "discord-bot-launcher" */;
+			buildConfigurationList = 4F5072C32BCF901F0005D352 /* Build configuration list for PBXNativeTarget "discord-bot-helper" */;
 			buildPhases = (
 				4F5072B02BCF901E0005D352 /* Sources */,
 				4F5072B12BCF901E0005D352 /* Frameworks */,
@@ -84,9 +84,9 @@
 			);
 			dependencies = (
 			);
-			name = "discord-bot-launcher";
-			productName = "discord-bot-launcher";
-			productReference = 4F5072B42BCF901E0005D352 /* discord-bot-launcher.app */;
+			name = "discord-bot-helper";
+			productName = "discord-bot-helper";
+			productReference = 4F5072B42BCF901E0005D352 /* discord-bot-helper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4F5072AF2BCF901E0005D352 /* Build configuration list for PBXProject "discord-bot-launcher" */;
+			buildConfigurationList = 4F5072AF2BCF901E0005D352 /* Build configuration list for PBXProject "discord-bot-helper" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F5072B32BCF901E0005D352 /* discord-bot-launcher */,
+				4F5072B32BCF901E0005D352 /* discord-bot-helper */,
 			);
 		};
 /* End PBXProject section */
@@ -266,10 +266,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "discord-bot-launcher/discord_bot_launcher.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "discord-bot-helper/discord_bot_launcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"discord-bot-launcher/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"discord-bot-helper/Preview Content\"";
 				DEVELOPMENT_TEAM = XU74X3434S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -289,7 +289,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ml.mrs1669.discord-bot-launcher";
+				PRODUCT_BUNDLE_IDENTIFIER = "ml.mrs1669.discord-bot-helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -304,10 +304,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "discord-bot-launcher/discord_bot_launcher.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "discord-bot-helper/discord_bot_launcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"discord-bot-launcher/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"discord-bot-helper/Preview Content\"";
 				DEVELOPMENT_TEAM = XU74X3434S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -327,7 +327,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ml.mrs1669.discord-bot-launcher";
+				PRODUCT_BUNDLE_IDENTIFIER = "ml.mrs1669.discord-bot-helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -340,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F5072AF2BCF901E0005D352 /* Build configuration list for PBXProject "discord-bot-launcher" */ = {
+		4F5072AF2BCF901E0005D352 /* Build configuration list for PBXProject "discord-bot-helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F5072C12BCF901F0005D352 /* Debug */,
@@ -349,7 +349,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F5072C32BCF901F0005D352 /* Build configuration list for PBXNativeTarget "discord-bot-launcher" */ = {
+		4F5072C32BCF901F0005D352 /* Build configuration list for PBXNativeTarget "discord-bot-helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F5072C42BCF901F0005D352 /* Debug */,
