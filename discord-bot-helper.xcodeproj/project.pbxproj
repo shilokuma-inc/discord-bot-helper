@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F2CDC502BD31B4A000DF626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4F5072B42BCF901E0005D352 /* discord-bot-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "discord-bot-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discord_bot_helperApp.swift; sourceTree = "<group>"; };
 		4F5072B92BCF901E0005D352 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		4F5072B62BCF901E0005D352 /* discord-bot-helper */ = {
 			isa = PBXGroup;
 			children = (
+				4F2CDC502BD31B4A000DF626 /* Info.plist */,
 				4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */,
 				4F5072B92BCF901E0005D352 /* ContentView.swift */,
 				4F5072BB2BCF901F0005D352 /* Assets.xcassets */,
@@ -282,6 +284,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "discord-bot-helper/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -320,6 +323,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "discord-bot-helper/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
