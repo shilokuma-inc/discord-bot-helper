@@ -11,7 +11,7 @@ import SwiftUI
 struct discord_bot_helperApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SendMessageView()
         }
     }
 }
