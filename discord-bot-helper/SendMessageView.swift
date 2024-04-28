@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SendMessageView.swift
 //  discord-bot-helper
 //
 //  Created by 村石 拓海 on 2024/04/17.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SendMessageView: View {
     
     @State var inputURL = ""
     @State var inputContext = ""
@@ -42,5 +42,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    SendMessageView()
 }

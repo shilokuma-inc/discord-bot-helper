@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F0EC95A2BD1A2C3009A5CB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0EC9592BD1A2C3009A5CB6 /* Alamofire */; };
 		4F5072B82BCF901E0005D352 /* discord_bot_helperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */; };
-		4F5072BA2BCF901E0005D352 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5072B92BCF901E0005D352 /* ContentView.swift */; };
+		4F5072BA2BCF901E0005D352 /* SendMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5072B92BCF901E0005D352 /* SendMessageView.swift */; };
 		4F5072BC2BCF901F0005D352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5072BB2BCF901F0005D352 /* Assets.xcassets */; };
 		4F5072C02BCF901F0005D352 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5072BF2BCF901F0005D352 /* Preview Assets.xcassets */; };
 		4F5C1BF52BDDDC2C001C9A51 /* SendMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */; };
@@ -20,7 +20,7 @@
 		4F2CDC502BD31B4A000DF626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4F5072B42BCF901E0005D352 /* discord-bot-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "discord-bot-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discord_bot_helperApp.swift; sourceTree = "<group>"; };
-		4F5072B92BCF901E0005D352 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F5072B92BCF901E0005D352 /* SendMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageView.swift; sourceTree = "<group>"; };
 		4F5072BB2BCF901F0005D352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F5072BD2BCF901F0005D352 /* discord_bot_helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = discord_bot_helper.entitlements; sourceTree = "<group>"; };
 		4F5072BF2BCF901F0005D352 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			children = (
 				4F2CDC502BD31B4A000DF626 /* Info.plist */,
 				4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */,
-				4F5072B92BCF901E0005D352 /* ContentView.swift */,
+				4F5072B92BCF901E0005D352 /* SendMessageView.swift */,
 				4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */,
 				4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */,
 				4F5072BB2BCF901F0005D352 /* Assets.xcassets */,
@@ -157,7 +157,7 @@
 			files = (
 				4F5C1BF72BDDE8A9001C9A51 /* MessageEntity.swift in Sources */,
 				4F5C1BF52BDDDC2C001C9A51 /* SendMessageViewModel.swift in Sources */,
-				4F5072BA2BCF901E0005D352 /* ContentView.swift in Sources */,
+				4F5072BA2BCF901E0005D352 /* SendMessageView.swift in Sources */,
 				4F5072B82BCF901E0005D352 /* discord_bot_helperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
