@@ -20,7 +20,11 @@ struct ContentView: View {
             Text("Hello, world!")
             TextField("URLを入れてください", text: $inputName)
             Button(action: {
-                viewModel.postDiscordWebhook(url: inputName)
+                viewModel.postDiscordWebhook(url: inputName, 
+                                             messageEntity: MessageEntity(
+                                                content: "hi"
+                                             )
+                )
             }, label: {
                 Text("Send")
             })
