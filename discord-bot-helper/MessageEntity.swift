@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct MessageEntity {
+    var content: String
+}
