@@ -9,18 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var inputName = ""
+    @State var inputURL = ""
+    @State var inputContext = ""
     private var viewModel = SendMessageViewModel()
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            TextField("URLを入れてください", text: $inputName)
+            TextField("URLを入れてください", text: $inputURL)
+            TextField("メッセージを入れてください", text: $inputContext)
             Button(action: {
-                viewModel.postDiscordWebhook(url: inputName)
+                viewModel.postDiscordWebhook(url: inputURL,
+                                             messageEntity: MessageEntity(
+                                                content: inputContext
+                                             )
+                )
             }, label: {
                 Text("Send")
             })

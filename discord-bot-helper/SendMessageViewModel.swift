@@ -9,13 +9,11 @@ import Foundation
 import Alamofire
 
 struct SendMessageViewModel {
-    public func postDiscordWebhook(url: String) {
+    public func postDiscordWebhook(url: String, messageEntity: MessageEntity) {
         let baseUrlString = url
         let param: Parameters = [
-                "content": "Hello"
-            ]
-        let headers: HTTPHeaders = ["Content-Type": "application/json"]
-
+            "content": messageEntity.content
+        ]
         
         var request = URLRequest(url: (URL(string: baseUrlString) ?? URL(string: "https://www.apple.com/")!))
         request.httpMethod = HTTPMethod.post.rawValue
