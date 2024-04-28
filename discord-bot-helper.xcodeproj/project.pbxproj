@@ -13,6 +13,7 @@
 		4F5072BC2BCF901F0005D352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5072BB2BCF901F0005D352 /* Assets.xcassets */; };
 		4F5072C02BCF901F0005D352 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5072BF2BCF901F0005D352 /* Preview Assets.xcassets */; };
 		4F5C1BF52BDDDC2C001C9A51 /* SendMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */; };
+		4F5C1BF72BDDE8A9001C9A51 /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4F5072BD2BCF901F0005D352 /* discord_bot_helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = discord_bot_helper.entitlements; sourceTree = "<group>"; };
 		4F5072BF2BCF901F0005D352 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewModel.swift; sourceTree = "<group>"; };
+		4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */,
 				4F5072B92BCF901E0005D352 /* ContentView.swift */,
 				4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */,
+				4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */,
 				4F5072BB2BCF901F0005D352 /* Assets.xcassets */,
 				4F5072BD2BCF901F0005D352 /* discord_bot_helper.entitlements */,
 				4F5072BE2BCF901F0005D352 /* Preview Content */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5C1BF72BDDE8A9001C9A51 /* MessageEntity.swift in Sources */,
 				4F5C1BF52BDDDC2C001C9A51 /* SendMessageViewModel.swift in Sources */,
 				4F5072BA2BCF901E0005D352 /* ContentView.swift in Sources */,
 				4F5072B82BCF901E0005D352 /* discord_bot_helperApp.swift in Sources */,
