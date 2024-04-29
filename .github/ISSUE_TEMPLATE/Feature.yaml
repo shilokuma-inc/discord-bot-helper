@@ -12,6 +12,5 @@ body:
       label: 追加したい機能の説明をお願いします
       description: 具体的にお願いします
       placeholder: 追加したい機能の説明をお願いします！
-      value: ""
     validations:
       required: true
