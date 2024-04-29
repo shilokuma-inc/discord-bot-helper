@@ -11,23 +11,14 @@ struct WithIconCapsuleTextFieldStyle: TextFieldStyle {
     @FocusState private var isFocused
     
     func _body(configuration: TextField<Self._Label>) -> some View {
-        HStack(spacing: 8) {
-            HStack(spacing: 8) {
-                Image(systemName: "magnifyingglass")
-                
-                configuration
-            }
-            .padding(.vertical, 10)
-            .padding(.horizontal, 12)
-            .background(.gray.opacity(0.3), in: Capsule())
+        HStack(spacing: 8.0) {
+            Image(systemName: "magnifyingglass")
             
-            Button {
-                isFocused = false
-            } label: {
-                Text("❌")
-            }
-            .foregroundStyle(.primary)
+            configuration
         }
+        .padding(.vertical, 8.0)
+        .padding(.horizontal, 12.0)
+        .background(.gray.opacity(0.3), in: Capsule())
     }
 }
 
