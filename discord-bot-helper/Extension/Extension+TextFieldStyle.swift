@@ -7,23 +7,19 @@
 
 import SwiftUI
 
-struct WithIconCapsuleTextFieldStyle: TextFieldStyle {
+struct CapsuleTextFieldStyle: TextFieldStyle {
     @FocusState private var isFocused
     
     func _body(configuration: TextField<Self._Label>) -> some View {
-        HStack(spacing: 8.0) {
-            Image(systemName: "magnifyingglass")
-            
-            configuration
-        }
-        .padding(.vertical, 8.0)
-        .padding(.horizontal, 12.0)
-        .background(.gray.opacity(0.3), in: Capsule())
+        configuration
+            .padding(.vertical, 8.0)
+            .padding(.horizontal, 12.0)
+            .background(.gray.opacity(0.3), in: Capsule())
     }
 }
 
-extension TextFieldStyle where Self == WithIconCapsuleTextFieldStyle {
-    static var withIconCapsule: WithIconCapsuleTextFieldStyle {
+extension TextFieldStyle where Self == CapsuleTextFieldStyle {
+    static var capsule: CapsuleTextFieldStyle {
         .init()
     }
 }
