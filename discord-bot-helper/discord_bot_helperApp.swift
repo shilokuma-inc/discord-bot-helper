@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct discord_bot_helperApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             SendMessageView()
