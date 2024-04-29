@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WithCancelTextFieldStyle: TextFieldStyle {
+struct WithIconCapsuleTextFieldStyle: TextFieldStyle {
     @FocusState private var isFocused
     
     func _body(configuration: TextField<Self._Label>) -> some View {
@@ -31,8 +31,8 @@ struct WithCancelTextFieldStyle: TextFieldStyle {
     }
 }
 
-extension TextFieldStyle where Self == WithCancelTextFieldStyle {
-    static var withCancel: WithCancelTextFieldStyle {
+extension TextFieldStyle where Self == WithIconCapsuleTextFieldStyle {
+    static var withIconCapsule: WithIconCapsuleTextFieldStyle {
         .init()
     }
 }
