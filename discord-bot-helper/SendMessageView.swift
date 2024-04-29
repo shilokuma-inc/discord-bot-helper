@@ -65,6 +65,18 @@ struct SendMessageView: View {
     }
 }
 
+extension SendMessageView {
+    private func withIconTextFieldView(icon: Image, placeholder: String, text: Binding<String>) -> some View {
+        HStack{
+            icon
+                .foregroundStyle(.indigo)
+            
+            TextField(placeholder, text: text)
+                .textFieldStyle(.capsule)
+        }
+    }
+}
+
 #Preview {
     SendMessageView()
 }
