@@ -18,6 +18,7 @@
 		4F67554E2BE0074A00F2629B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4F67554D2BE0074A00F2629B /* FirebaseAnalytics */; };
 		4F6755502BE0074A00F2629B /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4F67554F2BE0074A00F2629B /* FirebaseCrashlytics */; };
 		4F6755522BE0074A00F2629B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F6755512BE0074A00F2629B /* FirebaseFirestore */; };
+		4F6755542BE008BC00F2629B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6755532BE008BC00F2629B /* AppDelegate.swift */; };
 		4FF2FEA52BDFAF4F00973FDA /* Extension+TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewModel.swift; sourceTree = "<group>"; };
 		4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEntity.swift; sourceTree = "<group>"; };
 		4F67554A2BE0065D00F2629B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F6755532BE008BC00F2629B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TextFieldStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				4FF2FEA32BDFAEC300973FDA /* Extension */,
+				4F6755532BE008BC00F2629B /* AppDelegate.swift */,
 				4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */,
 				4F5072B92BCF901E0005D352 /* SendMessageView.swift */,
 				4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */,
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6755542BE008BC00F2629B /* AppDelegate.swift in Sources */,
 				4F5C1BF72BDDE8A9001C9A51 /* MessageEntity.swift in Sources */,
 				4F5C1BF52BDDDC2C001C9A51 /* SendMessageViewModel.swift in Sources */,
 				4FF2FEA52BDFAF4F00973FDA /* Extension+TextFieldStyle.swift in Sources */,
