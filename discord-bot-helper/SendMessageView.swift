@@ -19,25 +19,20 @@ struct SendMessageView: View {
                 .opacity(0.2)
                 .ignoresSafeArea()
             VStack(spacing: .zero) {
-                HStack{
-                    Image(systemName: "link.icloud.fill")
-                        .foregroundStyle(.indigo)
-                    
-                    TextField("URLを入れてください", text: $inputURL)
-                        .textFieldStyle(.capsule)
-                }
+                withIconTextFieldView(
+                    icon: Image(systemName: "link.icloud.fill"),
+                    placeholder: "URLを入れてください",
+                    text: $inputURL
+                )
                 
                 Spacer()
                     .frame(height: 8.0)
                 
-                HStack{
-                    Image(systemName: "square.and.pencil")
-                        .foregroundStyle(.indigo)
-                    
-                    TextField("メッセージを入れてください", text: $inputContext)
-                        .textFieldStyle(.capsule)
-                        .lineLimit(0...10)
-                }
+                withIconTextFieldView(
+                    icon: Image(systemName: "square.and.pencil"),
+                    placeholder: "メッセージを入れてください",
+                    text: $inputContext
+                )
                 
                 Spacer()
                     .frame(height: 16.0)
