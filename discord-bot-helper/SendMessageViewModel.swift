@@ -12,6 +12,8 @@ struct SendMessageViewModel {
     public func postDiscordWebhook(url: String, messageEntity: MessageEntity) {
         let baseUrlString = url
         let param: Parameters = [
+            "username": messageEntity.username,
+            "avatar_url": messageEntity.avatarURL,
             "content": messageEntity.content
         ]
         

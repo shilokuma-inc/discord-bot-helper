@@ -10,6 +10,8 @@ import SwiftUI
 struct SendMessageView: View {
     
     @State var inputURL = ""
+    @State var inputUsername = ""
+    @State var inputAvatarURL = ""
     @State var inputContext = ""
     private var viewModel = SendMessageViewModel()
     
@@ -19,27 +21,40 @@ struct SendMessageView: View {
                 .opacity(0.2)
                 .ignoresSafeArea()
             VStack(spacing: .zero) {
-                withIconTextFieldView(
-                    icon: Image(systemName: "link.icloud.fill"),
-                    placeholder: "URLを入れてください",
-                    text: $inputURL
-                )
+                VStack(spacing: 8.0) {
+                    withIconTextFieldView(
+                        icon: Image(systemName: "link.icloud.fill"),
+                        placeholder: "URLを入れてください",
+                        text: $inputURL
+                    )
+                    
+                    withIconTextFieldView(
+                        icon: Image(systemName: "rectangle.and.pencil.and.ellipsis"),
+                        placeholder: "名前を入れてください",
+                        text: $inputUsername
+                    )
+                    
+                    withIconTextFieldView(
+                        icon: Image(systemName: "person.crop.square"),
+                        placeholder: "プロフィール画像のURLを入れてください",
+                        text: $inputAvatarURL
+                    )
+                    
+                    withIconTextFieldView(
+                        icon: Image(systemName: "square.and.pencil"),
+                        placeholder: "メッセージを入れてください",
+                        text: $inputContext
+                    )
+                }
                 
                 Spacer()
-                    .frame(height: 8.0)
-                
-                withIconTextFieldView(
-                    icon: Image(systemName: "square.and.pencil"),
-                    placeholder: "メッセージを入れてください",
-                    text: $inputContext
-                )
-                
-                Spacer()
-                    .frame(height: 16.0)
+                    .frame(height: 48.0)
                 
                 Button(action: {
                     viewModel.postDiscordWebhook(url: inputURL,
                                                  messageEntity: MessageEntity(
+                                                    username: inputUsername,
+                                                    avatarURL: inputAvatarURL,
                                                     content: inputContext
                                                  )
                     )
@@ -65,6 +80,7 @@ extension SendMessageView {
         HStack{
             icon
                 .foregroundStyle(.indigo)
+                .frame(width: 24.0, height: 24.0)
             
             TextField(placeholder, text: text)
                 .textFieldStyle(.capsule)
