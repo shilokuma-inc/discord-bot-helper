@@ -53,6 +53,8 @@ struct SendMessageView: View {
                 Button(action: {
                     viewModel.postDiscordWebhook(url: inputURL,
                                                  messageEntity: MessageEntity(
+                                                    username: inputUsername,
+                                                    avatarURL: inputAvatarURL,
                                                     content: inputContext
                                                  )
                     )

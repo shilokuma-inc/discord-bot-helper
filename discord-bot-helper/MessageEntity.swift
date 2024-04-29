@@ -8,9 +8,13 @@
 import Foundation
 
 struct MessageEntity {
+    var username: String
+    var avatarURL: String
     var content: String
     
-    init(content: String) {
+    init(username: String, avatarURL: String, content: String) {
+        self.username = username
+        self.avatarURL = avatarURL
         self.content = content
     }
 }
