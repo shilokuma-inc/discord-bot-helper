@@ -14,6 +14,7 @@
 		4F5072C02BCF901F0005D352 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5072BF2BCF901F0005D352 /* Preview Assets.xcassets */; };
 		4F5C1BF52BDDDC2C001C9A51 /* SendMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */; };
 		4F5C1BF72BDDE8A9001C9A51 /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */; };
+		4FF2FEA52BDFAF4F00973FDA /* Extension+TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4F5072BF2BCF901F0005D352 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewModel.swift; sourceTree = "<group>"; };
 		4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEntity.swift; sourceTree = "<group>"; };
+		4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TextFieldStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				4F2CDC502BD31B4A000DF626 /* Info.plist */,
+				4FF2FEA32BDFAEC300973FDA /* Extension */,
 				4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */,
 				4F5072B92BCF901E0005D352 /* SendMessageView.swift */,
 				4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */,
@@ -77,6 +80,14 @@
 				4F5072BF2BCF901F0005D352 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FF2FEA32BDFAEC300973FDA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			files = (
 				4F5C1BF72BDDE8A9001C9A51 /* MessageEntity.swift in Sources */,
 				4F5C1BF52BDDDC2C001C9A51 /* SendMessageViewModel.swift in Sources */,
+				4FF2FEA52BDFAF4F00973FDA /* Extension+TextFieldStyle.swift in Sources */,
 				4F5072BA2BCF901E0005D352 /* SendMessageView.swift in Sources */,
 				4F5072B82BCF901E0005D352 /* discord_bot_helperApp.swift in Sources */,
 			);
