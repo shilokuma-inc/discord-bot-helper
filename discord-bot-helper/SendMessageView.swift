@@ -55,7 +55,7 @@ struct SendMessageView: View {
                 )
                 
                 Spacer()
-                    .frame(height: 16.0)
+                    .frame(height: 48.0)
                 
                 Button(action: {
                     viewModel.postDiscordWebhook(url: inputURL,
