@@ -20,13 +20,13 @@ struct SendMessageView: View {
                 .ignoresSafeArea()
             VStack(spacing: .zero) {
                 TextField("URLを入れてください", text: $inputURL)
-                    .textFieldStyle(.roundedBorder)
+                    .textFieldStyle(.withCancel)
                 
                 Spacer()
                     .frame(height: 8.0)
                 
                 TextField("メッセージを入れてください", text: $inputContext)
-                    .textFieldStyle(.roundedBorder)
+                        .textFieldStyle(.withCancel)
                     .lineLimit(0...10)
                 
                 Spacer()
