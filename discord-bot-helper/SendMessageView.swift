@@ -21,38 +21,31 @@ struct SendMessageView: View {
                 .opacity(0.2)
                 .ignoresSafeArea()
             VStack(spacing: .zero) {
-                withIconTextFieldView(
-                    icon: Image(systemName: "link.icloud.fill"),
-                    placeholder: "URLを入れてください",
-                    text: $inputURL
-                )
-                
-                Spacer()
-                    .frame(height: 8.0)
-                
-                withIconTextFieldView(
-                    icon: Image(systemName: "rectangle.and.pencil.and.ellipsis"),
-                    placeholder: "名前を入れてください",
-                    text: $inputUsername
-                )
-                
-                Spacer()
-                    .frame(height: 8.0)
-                
-                withIconTextFieldView(
-                    icon: Image(systemName: "person.crop.square"),
-                    placeholder: "プロフィール画像のURLを入れてください",
-                    text: $inputAvatarURL
-                )
-                
-                Spacer()
-                    .frame(height: 8.0)
-                
-                withIconTextFieldView(
-                    icon: Image(systemName: "square.and.pencil"),
-                    placeholder: "メッセージを入れてください",
-                    text: $inputContext
-                )
+                VStack(spacing: 8.0) {
+                    withIconTextFieldView(
+                        icon: Image(systemName: "link.icloud.fill"),
+                        placeholder: "URLを入れてください",
+                        text: $inputURL
+                    )
+                    
+                    withIconTextFieldView(
+                        icon: Image(systemName: "rectangle.and.pencil.and.ellipsis"),
+                        placeholder: "名前を入れてください",
+                        text: $inputUsername
+                    )
+                    
+                    withIconTextFieldView(
+                        icon: Image(systemName: "person.crop.square"),
+                        placeholder: "プロフィール画像のURLを入れてください",
+                        text: $inputAvatarURL
+                    )
+                    
+                    withIconTextFieldView(
+                        icon: Image(systemName: "square.and.pencil"),
+                        placeholder: "メッセージを入れてください",
+                        text: $inputContext
+                    )
+                }
                 
                 Spacer()
                     .frame(height: 48.0)
