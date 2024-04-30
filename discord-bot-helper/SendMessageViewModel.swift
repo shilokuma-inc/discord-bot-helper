@@ -28,7 +28,7 @@ struct SendMessageViewModel {
         request.httpBody = NSString(
             // swiftlint:disable:next force_try
             data: try! JSONSerialization.data(withJSONObject: param as Any,
-                                              options:JSONSerialization.WritingOptions.prettyPrinted
+                                              options: JSONSerialization.WritingOptions.prettyPrinted
                                              ),
             encoding: String.Encoding.utf8.rawValue
         )!
