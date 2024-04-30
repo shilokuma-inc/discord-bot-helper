@@ -118,6 +118,7 @@
 				4F5072B02BCF901E0005D352 /* Sources */,
 				4F5072B12BCF901E0005D352 /* Frameworks */,
 				4F5072B22BCF901E0005D352 /* Resources */,
+				4FAB6FF02BE1914D00B2F33A /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -183,6 +184,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FAB6FF02BE1914D00B2F33A /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which mint >/dev/null; then\n  mint run swiftlint swiftlint --fix\n  mint run swiftlint swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F5072B02BCF901E0005D352 /* Sources */ = {
