@@ -12,7 +12,7 @@ struct MessageEntity {
     var avatarURL: String
     var content: String
     var messageEmbedEntity: MessageEmbedEntity
-    
+
     init(username: String, avatarURL: String, content: String, messageEmbedEntity: MessageEmbedEntity) {
         self.username = username
         self.avatarURL = avatarURL
@@ -23,7 +23,7 @@ struct MessageEntity {
 
 struct MessageEmbedEntity {
     var title: String
-    
+
     init(title: String) {
         self.title = title
     }
