@@ -37,10 +37,10 @@ struct SendMessageViewModel {
         AF.request(request)
         .responseData { response in
             switch response.result {
-                case .success(let data):
-                    print("success")
-                case .failure(let error):
-                    print("error")
+            case .success:
+                print("success")
+            case .failure:
+                print("error")
             }
         }
     }
