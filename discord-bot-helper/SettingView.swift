@@ -9,6 +9,11 @@ import SwiftUI
 
 struct SettingView: View {
     var body: some View {
-        Text("設定画面")
+        ZStack {
+            Color.pink
+                .opacity(0.2)
+                .ignoresSafeArea(edges: [.top])
+            Text("設定画面")
+        }
     }
 }
