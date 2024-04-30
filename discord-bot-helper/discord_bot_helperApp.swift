@@ -10,9 +10,9 @@ import SwiftUI
 @main
 // swiftlint:disable:next type_name
 struct discord_bot_helperApp: App {
-    
+
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
+
     var body: some Scene {
         WindowGroup {
             MainView()
