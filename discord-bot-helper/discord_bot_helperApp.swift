@@ -14,7 +14,7 @@ struct discord_bot_helperApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SendMessageView()
+            MainView()
         }
     }
 }
