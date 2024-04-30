@@ -13,7 +13,11 @@ struct SettingView: View {
             Color.pink
                 .opacity(0.2)
                 .ignoresSafeArea(edges: [.top])
-            Text("設定画面")
+            List {
+                Text("このアプリについて")
+            }
+            .scrollContentBackground(.hidden)
+            .background(.clear)
         }
     }
 }
