@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F0EC95A2BD1A2C3009A5CB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0EC9592BD1A2C3009A5CB6 /* Alamofire */; };
+		4F435C8E2BE115650087CEE3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F435C8D2BE115650087CEE3 /* MainView.swift */; };
+		4F435C902BE117840087CEE3 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F435C8F2BE117840087CEE3 /* SettingView.swift */; };
 		4F5072B82BCF901E0005D352 /* discord_bot_helperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */; };
 		4F5072BA2BCF901E0005D352 /* SendMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5072B92BCF901E0005D352 /* SendMessageView.swift */; };
 		4F5072BC2BCF901F0005D352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5072BB2BCF901F0005D352 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		4F2CDC502BD31B4A000DF626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4F435C8D2BE115650087CEE3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4F435C8F2BE117840087CEE3 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		4F5072B42BCF901E0005D352 /* discord-bot-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "discord-bot-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discord_bot_helperApp.swift; sourceTree = "<group>"; };
 		4F5072B92BCF901E0005D352 /* SendMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageView.swift; sourceTree = "<group>"; };
@@ -74,9 +78,11 @@
 				4FF2FEA32BDFAEC300973FDA /* Extension */,
 				4F6755532BE008BC00F2629B /* AppDelegate.swift */,
 				4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */,
+				4F435C8D2BE115650087CEE3 /* MainView.swift */,
 				4F5072B92BCF901E0005D352 /* SendMessageView.swift */,
 				4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */,
 				4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */,
+				4F435C8F2BE117840087CEE3 /* SettingView.swift */,
 				4F5072BB2BCF901F0005D352 /* Assets.xcassets */,
 				4F5072BD2BCF901F0005D352 /* discord_bot_helper.entitlements */,
 				4F2CDC502BD31B4A000DF626 /* Info.plist */,
@@ -184,9 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F6755542BE008BC00F2629B /* AppDelegate.swift in Sources */,
+				4F435C8E2BE115650087CEE3 /* MainView.swift in Sources */,
 				4F5C1BF72BDDE8A9001C9A51 /* MessageEntity.swift in Sources */,
 				4F5C1BF52BDDDC2C001C9A51 /* SendMessageViewModel.swift in Sources */,
 				4FF2FEA52BDFAF4F00973FDA /* Extension+TextFieldStyle.swift in Sources */,
+				4F435C902BE117840087CEE3 /* SettingView.swift in Sources */,
 				4F5072BA2BCF901E0005D352 /* SendMessageView.swift in Sources */,
 				4F5072B82BCF901E0005D352 /* discord_bot_helperApp.swift in Sources */,
 			);

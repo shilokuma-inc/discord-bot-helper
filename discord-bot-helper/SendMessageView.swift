@@ -19,7 +19,7 @@ struct SendMessageView: View {
         ZStack {
             Color.cyan
                 .opacity(0.2)
-                .ignoresSafeArea()
+                .ignoresSafeArea(edges: [.top])
             VStack(spacing: .zero) {
                 VStack(spacing: 8.0) {
                     withIconTextFieldView(
