@@ -14,7 +14,12 @@ struct SendMessageViewModel {
         let param: Parameters = [
             "username": messageEntity.username,
             "avatar_url": messageEntity.avatarURL,
-            "content": messageEntity.content
+            "content": messageEntity.content,
+            "embeds": [
+                [
+                    "title": messageEntity.messageEmbedEntity.title
+                ]
+            ]
         ]
         
         var request = URLRequest(url: (URL(string: baseUrlString) ?? URL(string: "https://www.apple.com/")!))

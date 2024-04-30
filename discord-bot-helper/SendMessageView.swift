@@ -13,6 +13,8 @@ struct SendMessageView: View {
     @State var inputUsername = ""
     @State var inputAvatarURL = ""
     @State var inputContext = ""
+    
+    @State var inputEmbedTitle = ""
     private var viewModel = SendMessageViewModel()
     
     var body: some View {
@@ -48,6 +50,15 @@ struct SendMessageView: View {
                 }
                 
                 Spacer()
+                    .frame(height: 24.0)
+                
+                withIconTextFieldView(
+                    icon: Image(systemName: "list.clipboard"),
+                    placeholder: "埋め込みタイトルを入れてください",
+                    text: $inputEmbedTitle
+                )
+                
+                Spacer()
                     .frame(height: 48.0)
                 
                 Button(action: {
@@ -55,7 +66,10 @@ struct SendMessageView: View {
                                                  messageEntity: MessageEntity(
                                                     username: inputUsername,
                                                     avatarURL: inputAvatarURL,
-                                                    content: inputContext
+                                                    content: inputContext, 
+                                                    messageEmbedEntity: MessageEmbedEntity(
+                                                        title: inputEmbedTitle
+                                                    )
                                                  )
                     )
                 }, label: {
