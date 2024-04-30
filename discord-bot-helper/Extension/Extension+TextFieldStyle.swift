@@ -10,6 +10,7 @@ import SwiftUI
 struct CapsuleTextFieldStyle: TextFieldStyle {
     @FocusState private var isFocused
     
+    // swiftlint:disable:next identifier_name
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
             .padding(.vertical, 8.0)
