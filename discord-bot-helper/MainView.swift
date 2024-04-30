@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var selection = 1
+    @State var selection = 2
     
     var body: some View {
         TabView(selection: $selection) {
@@ -16,6 +16,13 @@ struct MainView: View {
                 .tabItem {
                     Label("送信", systemImage: "paperplane.fill")
                 }
+                .tag(1)
+            
+            SettingView()
+                .tabItem {
+                    Label("設定", systemImage: "gear")
+                }
+                .tag(2)
         }
     }
 }
