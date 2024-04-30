@@ -21,7 +21,7 @@ struct SendMessageViewModel {
                 ]
             ]
         ]
-        
+
         var request = URLRequest(url: (URL(string: baseUrlString) ?? URL(string: "https://www.apple.com/")!))
         request.httpMethod = HTTPMethod.post.rawValue
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

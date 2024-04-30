@@ -35,23 +35,23 @@ struct SendMessageView: View {
                         placeholder: "名前を入れてください",
                         text: $inputUsername
                     )
-                    
+
                     withIconTextFieldView(
                         icon: Image(systemName: "person.crop.square"),
                         placeholder: "プロフィール画像のURLを入れてください",
                         text: $inputAvatarURL
                     )
-                    
+
                     withIconTextFieldView(
                         icon: Image(systemName: "square.and.pencil"),
                         placeholder: "メッセージを入れてください",
                         text: $inputContext
                     )
                 }
-                
+
                 Spacer()
                     .frame(height: 24.0)
-                
+
                 withIconTextFieldView(
                     icon: Image(systemName: "list.clipboard"),
                     placeholder: "埋め込みタイトルを入れてください",
