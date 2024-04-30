@@ -24,11 +24,22 @@ struct SendMessageView: View {
                 .ignoresSafeArea(edges: [.top])
             VStack(spacing: .zero) {
                 VStack(spacing: 8.0) {
-                    withIconTextFieldView(
-                        icon: Image(systemName: "link.icloud.fill"),
-                        placeholder: "URLを入れてください",
-                        text: $inputURL
-                    )
+                    HStack {
+                        withIconTextFieldView(
+                            icon: Image(systemName: "link.icloud.fill"),
+                            placeholder: "URLを入れてください",
+                            text: $inputURL
+                        )
+                        
+                        if !inputURL.isEmpty {
+                            Button(action: {
+                                inputURL = ""
+                            }, label: {
+                                Image(systemName: "xmark.circle.fill")
+                                    .foregroundStyle(.gray)
+                            })
+                        }
+                    }
 
                     withIconTextFieldView(
                         icon: Image(systemName: "rectangle.and.pencil.and.ellipsis"),
