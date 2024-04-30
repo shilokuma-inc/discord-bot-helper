@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDzbHAYaXQ-XpS4TVrs-lLfra5JZpOnXqc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>543416249422</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ml.mrs1669.discord-bot-helper</string>
+	<key>PROJECT_ID</key>
+	<string>discord-bot-helper-ios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>discord-bot-helper-ios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:543416249422:ios:4d927010c47e2f3c66271f</string>
+</dict>
+</plist>
