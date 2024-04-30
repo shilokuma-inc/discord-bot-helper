@@ -126,6 +126,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4FAB6FF52BE1959900B2F33A /* PBXTargetDependency */,
 			);
 			name = "discord-bot-helper";
 			packageProductDependencies = (
@@ -165,6 +166,7 @@
 			packageReferences = (
 				4F0EC9582BD1A2C3009A5CB6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4F67554C2BE0074A00F2629B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4FAB6FF32BE1957000B2F33A /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = 4F5072B52BCF901E0005D352 /* Products */;
 			projectDirPath = "";
@@ -206,7 +208,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which mint >/dev/null; then\n  mint run swiftlint swiftlint --fix\n  mint run swiftlint swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -227,6 +229,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FAB6FF52BE1959900B2F33A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4FAB6FF42BE1959900B2F33A /* SwiftLintPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4F5072C12BCF901F0005D352 /* Debug */ = {
@@ -463,6 +472,14 @@
 				minimumVersion = 10.24.0;
 			};
 		};
+		4FAB6FF32BE1957000B2F33A /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -485,6 +502,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F67554C2BE0074A00F2629B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		4FAB6FF42BE1959900B2F33A /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FAB6FF32BE1957000B2F33A /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
