@@ -4,7 +4,7 @@
 
 <!-- If this pull request resolves any GitHub issues -->
 ## 関連するISSUE
-- #
+- resolved #
 
 ## 詳細 (Detail)
 
