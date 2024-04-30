@@ -8,7 +8,14 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var selection = 1
+    
     var body: some View {
-        SendMessageView()
+        TabView(selection: $selection) {
+            SendMessageView()
+                .tabItem {
+                    Label("送信", systemImage: "paperplane.fill")
+                }
+        }
     }
 }
