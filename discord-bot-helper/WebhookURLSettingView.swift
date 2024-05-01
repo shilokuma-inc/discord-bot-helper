@@ -15,14 +15,25 @@ struct WebhookURLSettingView: View {
             Color.pink
                 .opacity(0.2)
                 .ignoresSafeArea(edges: [.top])
-            VStack {
+            
+            VStack(spacing: 32.0) {
                 Text("URL設定")
+                
                 Button(action: {
                     dismiss()
                 }) {
                     Text("設定完了")
+                        .font(.system(size: 24, weight: .semibold, design: .default))
+                        .foregroundStyle(.gray)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 30.0)
+                                .foregroundStyle(.ultraThickMaterial)
+                                .shadow(radius: 5.0)
+                        )
                 }
             }
         }
+        .navigationBarHidden(true)
     }
 }
