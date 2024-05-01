@@ -72,7 +72,7 @@ struct SendMessageView: View {
                 Spacer()
                     .frame(height: 48.0)
 
-                sendButton()
+                sendButton(isTapEnabled: false)
             }
             .padding()
         }
@@ -91,7 +91,7 @@ extension SendMessageView {
         }
     }
     
-    private func sendButton() -> some View {
+    private func sendButton(isTapEnabled: Bool) -> some View {
         Button(action: {
             viewModel.postDiscordWebhook(url: inputURL,
                                          messageEntity: MessageEntity(
@@ -114,6 +114,7 @@ extension SendMessageView {
                         .shadow(radius: 5.0)
                 )
         })
+        .disabled(!isTapEnabled)
     }
 }
 
