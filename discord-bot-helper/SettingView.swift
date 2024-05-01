@@ -24,7 +24,7 @@ struct SettingView: View {
                             Text("URL設定")
                         }
                         .navigationDestination(isPresented: $isURLSettingPresented) {
-                            Text("URL設定")
+                            WebhookURLSettingView()
                         }
                     }, header: {
                         Text("送信先URL設定")
