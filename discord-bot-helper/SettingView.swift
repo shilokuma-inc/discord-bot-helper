@@ -32,6 +32,10 @@ struct SettingView: View {
                     
                     Section(content: {
                         Text("このアプリについて")
+                        
+                        Text("ライセンス")
+                        
+                        Text("アプリバージョン")
                     }, header: {
                         Text("アプリ情報")
                     })
