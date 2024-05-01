@@ -72,28 +72,7 @@ struct SendMessageView: View {
                 Spacer()
                     .frame(height: 48.0)
 
-                Button(action: {
-                    viewModel.postDiscordWebhook(url: inputURL,
-                                                 messageEntity: MessageEntity(
-                                                    username: inputUsername,
-                                                    avatarURL: inputAvatarURL,
-                                                    content: inputContext,
-                                                    messageEmbedEntity: MessageEmbedEntity(
-                                                        title: inputEmbedTitle
-                                                    )
-                                                 )
-                    )
-                }, label: {
-                    Text("メッセージを送信！")
-                        .font(.system(size: 24, weight: .semibold, design: .default))
-                        .foregroundStyle(.gray)
-                        .padding()
-                        .background(
-                            RoundedRectangle(cornerRadius: 30.0)
-                                .foregroundStyle(.ultraThickMaterial)
-                                .shadow(radius: 5.0)
-                        )
-                })
+                sendButton()
             }
             .padding()
         }
@@ -110,6 +89,31 @@ extension SendMessageView {
             TextField(placeholder, text: text)
                 .textFieldStyle(.capsule)
         }
+    }
+    
+    private func sendButton() -> some View {
+        Button(action: {
+            viewModel.postDiscordWebhook(url: inputURL,
+                                         messageEntity: MessageEntity(
+                                            username: inputUsername,
+                                            avatarURL: inputAvatarURL,
+                                            content: inputContext,
+                                            messageEmbedEntity: MessageEmbedEntity(
+                                                title: inputEmbedTitle
+                                            )
+                                         )
+            )
+        }, label: {
+            Text("メッセージを送信！")
+                .font(.system(size: 24, weight: .semibold, design: .default))
+                .foregroundStyle(.gray)
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 30.0)
+                        .foregroundStyle(.ultraThickMaterial)
+                        .shadow(radius: 5.0)
+                )
+        })
     }
 }
 
