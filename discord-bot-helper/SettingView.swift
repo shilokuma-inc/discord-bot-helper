@@ -15,6 +15,14 @@ struct SettingView: View {
                 .ignoresSafeArea(edges: [.top])
             List {
                 Section(content: {
+                    NavigationStack(root: {
+                        Text("URL設定")
+                    })
+                }, header: {
+                    Text("送信先URL設定")
+                })
+                
+                Section(content: {
                     Text("このアプリについて")
                 }, header: {
                     Text("アプリ情報")
