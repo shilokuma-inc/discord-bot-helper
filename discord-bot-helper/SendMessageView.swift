@@ -72,7 +72,7 @@ struct SendMessageView: View {
                 Spacer()
                     .frame(height: 48.0)
 
-                sendButton(isTapEnabled: false)
+                sendButton(isTapEnabled: true)
             }
             .padding()
         }
@@ -106,10 +106,11 @@ extension SendMessageView {
         }, label: {
             Text("メッセージを送信！")
                 .font(.system(size: 24, weight: .semibold, design: .default))
-                .foregroundStyle(.gray)
+                .foregroundStyle(.white)
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 30.0)
+                        .foregroundStyle(isTapEnabled ? .indigo : .gray)
                         .foregroundStyle(.ultraThickMaterial)
                         .shadow(radius: 5.0)
                 )
