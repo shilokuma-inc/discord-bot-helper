@@ -11,16 +11,9 @@ import Alamofire
 struct SendMessageViewModel {
     public func postDiscordWebhook(url: String, messageEntity: MessageEntity) {
         let baseUrlString = url
-        let param: Parameters = [
-            "username": messageEntity.username,
-            "avatar_url": messageEntity.avatarURL,
-            "content": messageEntity.content,
-            "embeds": [
-                [
-                    "title": messageEntity.messageEmbedEntity.title
-                ]
-            ]
-        ]
+        let param: Parameters = {
+            makeParameter(messageEntity: messageEntity)
+        }()
 
         var request = URLRequest(url: (URL(string: baseUrlString) ?? URL(string: "https://www.apple.com/")!))
         request.httpMethod = HTTPMethod.post.rawValue
@@ -43,5 +36,30 @@ struct SendMessageViewModel {
                 print("error")
             }
         }
+    }
+}
+
+extension SendMessageViewModel {
+    private func makeParameter(messageEntity: MessageEntity) -> Parameters {
+        var param: Parameters
+        if messageEntity.messageEmbedEntity.title.isEmpty {
+            param = [
+                "username": messageEntity.username.isEmpty ? "以下、名無しにかわりましてVIPがお送りします" : messageEntity.username,
+                "avatar_url": messageEntity.avatarURL,
+                "content": messageEntity.content.isEmpty ? "なんか書いてね" : messageEntity.content
+            ]
+        } else {
+            param = [
+                "username": messageEntity.username.isEmpty ? "以下、名無しにかわりましてVIPがお送りします" : messageEntity.username,
+                "avatar_url": messageEntity.avatarURL,
+                "content": messageEntity.content.isEmpty ? "なんか書いてね" : messageEntity.content,
+                "embeds": [
+                    [
+                        "title": messageEntity.messageEmbedEntity.title
+                    ]
+                ]
+            ]
+        }
+        return param
     }
 }

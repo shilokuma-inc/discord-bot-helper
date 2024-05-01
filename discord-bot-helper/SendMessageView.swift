@@ -15,6 +15,8 @@ struct SendMessageView: View {
     @State var inputContext = ""
 
     @State var inputEmbedTitle = ""
+    
+    @State var isTapEnable: Bool = false
     private var viewModel = SendMessageViewModel()
 
     var body: some View {
@@ -30,6 +32,9 @@ struct SendMessageView: View {
                             placeholder: "URLを入れてください",
                             text: $inputURL
                         )
+                        .onChange(of: inputURL) {
+                            textFieldValidation()
+                        }
                         
                         if !inputURL.isEmpty {
                             Button(action: {
@@ -72,28 +77,7 @@ struct SendMessageView: View {
                 Spacer()
                     .frame(height: 48.0)
 
-                Button(action: {
-                    viewModel.postDiscordWebhook(url: inputURL,
-                                                 messageEntity: MessageEntity(
-                                                    username: inputUsername,
-                                                    avatarURL: inputAvatarURL,
-                                                    content: inputContext,
-                                                    messageEmbedEntity: MessageEmbedEntity(
-                                                        title: inputEmbedTitle
-                                                    )
-                                                 )
-                    )
-                }, label: {
-                    Text("メッセージを送信！")
-                        .font(.system(size: 24, weight: .semibold, design: .default))
-                        .foregroundStyle(.gray)
-                        .padding()
-                        .background(
-                            RoundedRectangle(cornerRadius: 30.0)
-                                .foregroundStyle(.ultraThickMaterial)
-                                .shadow(radius: 5.0)
-                        )
-                })
+                sendButton(isTapEnabled: isTapEnable)
             }
             .padding()
         }
@@ -109,6 +93,43 @@ extension SendMessageView {
 
             TextField(placeholder, text: text)
                 .textFieldStyle(.capsule)
+        }
+    }
+    
+    private func sendButton(isTapEnabled: Bool) -> some View {
+        Button(action: {
+            viewModel.postDiscordWebhook(url: inputURL,
+                                         messageEntity: MessageEntity(
+                                            username: inputUsername,
+                                            avatarURL: inputAvatarURL,
+                                            content: inputContext,
+                                            messageEmbedEntity: MessageEmbedEntity(
+                                                title: inputEmbedTitle
+                                            )
+                                         )
+            )
+        }, label: {
+            Text("メッセージを送信！")
+                .font(.system(size: 24, weight: .semibold, design: .default))
+                .foregroundStyle(.white)
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 30.0)
+                        .foregroundStyle(isTapEnabled ? .indigo : .gray)
+                        .foregroundStyle(.ultraThickMaterial)
+                        .shadow(radius: 5.0)
+                )
+        })
+        .disabled(!isTapEnabled)
+    }
+}
+
+extension SendMessageView {
+    private func textFieldValidation() {
+        if inputURL.isEmpty {
+            isTapEnable = false
+        } else {
+            isTapEnable = true
         }
     }
 }
