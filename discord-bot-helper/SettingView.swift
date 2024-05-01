@@ -14,7 +14,11 @@ struct SettingView: View {
                 .opacity(0.2)
                 .ignoresSafeArea(edges: [.top])
             List {
-                Text("このアプリについて")
+                Section(content: {
+                    Text("このアプリについて")
+                }, header: {
+                    Text("アプリ情報")
+                })
             }
             .scrollContentBackground(.hidden)
             .background(.clear)
