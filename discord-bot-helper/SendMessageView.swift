@@ -15,6 +15,8 @@ struct SendMessageView: View {
     @State var inputContext = ""
 
     @State var inputEmbedTitle = ""
+    
+    @State var isTapEnable: Bool = false
     private var viewModel = SendMessageViewModel()
 
     var body: some View {
@@ -30,6 +32,9 @@ struct SendMessageView: View {
                             placeholder: "URLを入れてください",
                             text: $inputURL
                         )
+                        .onChange(of: inputURL) {
+                            textFieldValidation()
+                        }
                         
                         if !inputURL.isEmpty {
                             Button(action: {
@@ -72,7 +77,7 @@ struct SendMessageView: View {
                 Spacer()
                     .frame(height: 48.0)
 
-                sendButton(isTapEnabled: true)
+                sendButton(isTapEnabled: isTapEnable)
             }
             .padding()
         }
@@ -116,6 +121,16 @@ extension SendMessageView {
                 )
         })
         .disabled(!isTapEnabled)
+    }
+}
+
+extension SendMessageView {
+    private func textFieldValidation() {
+        if inputURL.isEmpty {
+            isTapEnable = false
+        } else {
+            isTapEnable = true
+        }
     }
 }
 
