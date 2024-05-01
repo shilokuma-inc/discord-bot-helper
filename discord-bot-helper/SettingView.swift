@@ -8,28 +8,37 @@
 import SwiftUI
 
 struct SettingView: View {
+    @State private var isURLSettingPresented = false
+    
     var body: some View {
-        ZStack {
-            Color.pink
-                .opacity(0.2)
-                .ignoresSafeArea(edges: [.top])
-            List {
-                Section(content: {
-                    NavigationStack(root: {
-                        Text("URL設定")
+        NavigationStack {
+            ZStack {
+                Color.pink
+                    .opacity(0.2)
+                    .ignoresSafeArea(edges: [.top])
+                List {
+                    Section(content: {
+                        Button {
+                            isURLSettingPresented = true
+                        } label: {
+                            Text("URL設定")
+                        }
+                        .navigationDestination(isPresented: $isURLSettingPresented) {
+                            Text("URL設定")
+                        }
+                    }, header: {
+                        Text("送信先URL設定")
                     })
-                }, header: {
-                    Text("送信先URL設定")
-                })
-                
-                Section(content: {
-                    Text("このアプリについて")
-                }, header: {
-                    Text("アプリ情報")
-                })
+                    
+                    Section(content: {
+                        Text("このアプリについて")
+                    }, header: {
+                        Text("アプリ情報")
+                    })
+                }
+                .scrollContentBackground(.hidden)
+                .background(.clear)
             }
-            .scrollContentBackground(.hidden)
-            .background(.clear)
         }
     }
 }
