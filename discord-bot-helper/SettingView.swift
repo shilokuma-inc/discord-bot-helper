@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingView: View {
+    let appInfo = AppInfo()
     @State private var isURLSettingPresented = false
     
     var body: some View {
@@ -38,7 +39,14 @@ struct SettingView: View {
                         
                         Text("ライセンス")
                         
-                        Text("アプリバージョン")
+                        HStack {
+                            Text("アプリバージョン")
+                            
+                            Spacer()
+                            
+                            Text(appInfo.getVersion())
+                                .foregroundStyle(.gray)
+                        }
                     }, header: {
                         Text("アプリ情報")
                     })
