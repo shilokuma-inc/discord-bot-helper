@@ -34,6 +34,8 @@ struct SettingView: View {
                     Section(content: {
                         Text("このアプリについて")
                         
+                        Text("プライバシーポリシー")
+                        
                         Text("ライセンス")
                         
                         Text("アプリバージョン")
