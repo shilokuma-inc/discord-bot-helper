@@ -23,6 +23,7 @@
 		4F6755562BE0123900F2629B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F6755552BE0123900F2629B /* GoogleService-Info.plist */; };
 		4FAB6FF22BE1923F00B2F33A /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4FAB6FF12BE1923F00B2F33A /* swiftlint.yml */; };
 		4FAB6FFB2BE1C53B00B2F33A /* WebhookURLSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAB6FFA2BE1C53B00B2F33A /* WebhookURLSettingView.swift */; };
+		4FD55D492BE6F04700581F34 /* FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD55D482BE6F04700581F34 /* FirebaseAnalytics.swift */; };
 		4FF2FEA52BDFAF4F00973FDA /* Extension+TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		4FAB6FF12BE1923F00B2F33A /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
 		4FAB6FF72BE1A04D00B2F33A /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		4FAB6FFA2BE1C53B00B2F33A /* WebhookURLSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebhookURLSettingView.swift; sourceTree = "<group>"; };
+		4FD55D482BE6F04700581F34 /* FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalytics.swift; sourceTree = "<group>"; };
 		4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TextFieldStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				4F5072B62BCF901E0005D352 /* discord-bot-helper */,
+				4FAB6FF62BE1A01B00B2F33A /* ci_scripts */,
 				4F5072B52BCF901E0005D352 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,10 +92,10 @@
 				4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */,
 				4F435C8F2BE117840087CEE3 /* SettingView.swift */,
 				4FAB6FFA2BE1C53B00B2F33A /* WebhookURLSettingView.swift */,
+				4FD55D482BE6F04700581F34 /* FirebaseAnalytics.swift */,
 				4F5072BB2BCF901F0005D352 /* Assets.xcassets */,
 				4F5072BD2BCF901F0005D352 /* discord_bot_helper.entitlements */,
 				4F2CDC502BD31B4A000DF626 /* Info.plist */,
-				4FAB6FF62BE1A01B00B2F33A /* ci_scripts */,
 				4FAB6FF12BE1923F00B2F33A /* swiftlint.yml */,
 				4F6755552BE0123900F2629B /* GoogleService-Info.plist */,
 				4F5072BE2BCF901F0005D352 /* Preview Content */,
@@ -236,6 +239,7 @@
 				4FF2FEA52BDFAF4F00973FDA /* Extension+TextFieldStyle.swift in Sources */,
 				4F435C902BE117840087CEE3 /* SettingView.swift in Sources */,
 				4F5072BA2BCF901E0005D352 /* SendMessageView.swift in Sources */,
+				4FD55D492BE6F04700581F34 /* FirebaseAnalytics.swift in Sources */,
 				4FAB6FFB2BE1C53B00B2F33A /* WebhookURLSettingView.swift in Sources */,
 				4F5072B82BCF901E0005D352 /* discord_bot_helperApp.swift in Sources */,
 			);
@@ -370,6 +374,7 @@
 				DEVELOPMENT_TEAM = XU74X3434S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "discord-bot-helper/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -386,7 +391,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ml.mrs1669.discord-bot-helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -410,6 +415,7 @@
 				DEVELOPMENT_TEAM = XU74X3434S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "discord-bot-helper/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -426,7 +432,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ml.mrs1669.discord-bot-helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
