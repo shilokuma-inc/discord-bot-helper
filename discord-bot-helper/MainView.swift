@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    let analytics = FirebaseAnalytics()
     @State var selection = 1
 
     var body: some View {
@@ -17,12 +18,18 @@ struct MainView: View {
                     Label("送信", systemImage: "paperplane.fill")
                 }
                 .tag(1)
+                .onAppear{
+                    analytics.sendAnalyticsScreen(screenName: "SendMessageView")
+                }
 
             SettingView()
                 .tabItem {
                     Label("設定", systemImage: "gear")
                 }
                 .tag(2)
+                .onAppear{
+                    analytics.sendAnalyticsScreen(screenName: "SettingView")
+                }
         }
     }
 }
