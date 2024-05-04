@@ -1,0 +1,16 @@
+name: 機能追加
+description: 機能追加のISSUE
+title: "【FEAT】 "
+labels: []
+projects: []
+assignees:
+  - mrs1669
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: 追加したい機能の説明をお願いします
+      description: 具体的にお願いします
+      placeholder: 追加したい機能の説明をお願いします！
+    validations:
+      required: true
