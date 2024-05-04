@@ -34,10 +34,12 @@ struct SettingView: View {
                     
                     Section(content: {
                         Text("このアプリについて")
+                            .foregroundStyle(.gray)
                         
                         Text("プライバシーポリシー")
                         
                         Text("ライセンス")
+                            .foregroundStyle(.gray)
                         
                         HStack {
                             Text("アプリバージョン")
