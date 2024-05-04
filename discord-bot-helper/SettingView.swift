@@ -26,12 +26,19 @@ struct SettingView: View {
                         .navigationDestination(isPresented: $isURLSettingPresented) {
                             WebhookURLSettingView()
                         }
+                        .disabled(true)
                     }, header: {
                         Text("送信先URL設定")
                     })
                     
                     Section(content: {
                         Text("このアプリについて")
+                        
+                        Text("プライバシーポリシー")
+                        
+                        Text("ライセンス")
+                        
+                        Text("アプリバージョン")
                     }, header: {
                         Text("アプリ情報")
                     })
