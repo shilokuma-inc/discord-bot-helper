@@ -92,10 +92,10 @@
 				4F5072B92BCF901E0005D352 /* SendMessageView.swift */,
 				4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */,
 				4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */,
-				4F435C8F2BE117840087CEE3 /* SettingView.swift */,
 				4FAB6FFA2BE1C53B00B2F33A /* WebhookURLSettingView.swift */,
 				4FD55D482BE6F04700581F34 /* FirebaseAnalytics.swift */,
 				4FD55D4A2BE6F92400581F34 /* AppInfo.swift */,
+				4FD55D4E2BE7019100581F34 /* Setting */,
 				4F5072BB2BCF901F0005D352 /* Assets.xcassets */,
 				4F5072BD2BCF901F0005D352 /* discord_bot_helper.entitlements */,
 				4F2CDC502BD31B4A000DF626 /* Info.plist */,
@@ -120,6 +120,14 @@
 				4FAB6FF72BE1A04D00B2F33A /* ci_post_clone.sh */,
 			);
 			path = ci_scripts;
+			sourceTree = "<group>";
+		};
+		4FD55D4E2BE7019100581F34 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4F435C8F2BE117840087CEE3 /* SettingView.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		4FF2FEA32BDFAEC300973FDA /* Extension */ = {
