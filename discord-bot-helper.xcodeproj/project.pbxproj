@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0758202BE81F2D0064A30F /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 4F07581F2BE81F2D0064A30F /* GoogleMobileAds */; };
 		4F0EC95A2BD1A2C3009A5CB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0EC9592BD1A2C3009A5CB6 /* Alamofire */; };
 		4F435C8E2BE115650087CEE3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F435C8D2BE115650087CEE3 /* MainView.swift */; };
 		4F435C902BE117840087CEE3 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F435C8F2BE117840087CEE3 /* SettingView.swift */; };
@@ -25,8 +26,8 @@
 		4FAB6FFB2BE1C53B00B2F33A /* WebhookURLSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAB6FFA2BE1C53B00B2F33A /* WebhookURLSettingView.swift */; };
 		4FD55D492BE6F04700581F34 /* FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD55D482BE6F04700581F34 /* FirebaseAnalytics.swift */; };
 		4FD55D4B2BE6F92400581F34 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD55D4A2BE6F92400581F34 /* AppInfo.swift */; };
-		4FD55D502BE701FE00581F34 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD55D4F2BE701FE00581F34 /* PrivacyPolicyView.swift */; };
 		4FD55D4D2BE6FCB800581F34 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4FD55D4C2BE6FCB800581F34 /* PrivacyInfo.xcprivacy */; };
+		4FD55D502BE701FE00581F34 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD55D4F2BE701FE00581F34 /* PrivacyPolicyView.swift */; };
 		4FF2FEA52BDFAF4F00973FDA /* Extension+TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +50,8 @@
 		4FAB6FFA2BE1C53B00B2F33A /* WebhookURLSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebhookURLSettingView.swift; sourceTree = "<group>"; };
 		4FD55D482BE6F04700581F34 /* FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalytics.swift; sourceTree = "<group>"; };
 		4FD55D4A2BE6F92400581F34 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
-		4FD55D4F2BE701FE00581F34 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		4FD55D4C2BE6FCB800581F34 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4FD55D4F2BE701FE00581F34 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TextFieldStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +62,7 @@
 			files = (
 				4F6755502BE0074A00F2629B /* FirebaseCrashlytics in Frameworks */,
 				4F6755522BE0074A00F2629B /* FirebaseFirestore in Frameworks */,
+				4F0758202BE81F2D0064A30F /* GoogleMobileAds in Frameworks */,
 				4F67554E2BE0074A00F2629B /* FirebaseAnalytics in Frameworks */,
 				4F0EC95A2BD1A2C3009A5CB6 /* Alamofire in Frameworks */,
 			);
@@ -166,6 +168,7 @@
 				4F67554D2BE0074A00F2629B /* FirebaseAnalytics */,
 				4F67554F2BE0074A00F2629B /* FirebaseCrashlytics */,
 				4F6755512BE0074A00F2629B /* FirebaseFirestore */,
+				4F07581F2BE81F2D0064A30F /* GoogleMobileAds */,
 			);
 			productName = "discord-bot-helper";
 			productReference = 4F5072B42BCF901E0005D352 /* discord-bot-helper.app */;
@@ -199,6 +202,7 @@
 				4F0EC9582BD1A2C3009A5CB6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4F67554C2BE0074A00F2629B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				4FAB6FF32BE1957000B2F33A /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				4F07581E2BE81F2D0064A30F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = 4F5072B52BCF901E0005D352 /* Products */;
 			projectDirPath = "";
@@ -488,6 +492,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4F07581E2BE81F2D0064A30F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
 		4F0EC9582BD1A2C3009A5CB6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -515,6 +527,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4F07581F2BE81F2D0064A30F /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F07581E2BE81F2D0064A30F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
 		4F0EC9592BD1A2C3009A5CB6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4F0EC9582BD1A2C3009A5CB6 /* XCRemoteSwiftPackageReference "Alamofire" */;
