@@ -11,13 +11,23 @@ import GoogleMobileAds
 struct BannerView: UIViewControllerRepresentable {
     @State private var viewWidth: CGFloat = .zero
     private let bannerView = GADBannerView()
-    private let adUnitID = "ca-app-pub-7683522872696760~1123417271"
+    private let adUnitID = "ca-app-pub-3940256099942544/2934735716"
 
     func makeUIViewController(context: Context) -> some UIViewController {
         let bannerViewController = BannerViewController()
         bannerView.adUnitID = adUnitID
         bannerView.rootViewController = bannerViewController
+        bannerView.delegate = context.coordinator
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
         bannerViewController.view.addSubview(bannerView)
+        
+        NSLayoutConstraint.activate(
+            [bannerView.bottomAnchor.constraint(
+                equalTo: bannerViewController.view.safeAreaLayoutGuide.bottomAnchor),
+             bannerView.centerXAnchor.constraint(equalTo: bannerViewController.view.centerXAnchor),
+            ]
+        )
+        
         bannerViewController.delegate = context.coordinator
 
         return bannerViewController
@@ -35,7 +45,7 @@ struct BannerView: UIViewControllerRepresentable {
         Coordinator(self)
     }
     
-    class Coordinator: NSObject, BannerViewControllerWidthDelegate {
+    class Coordinator: NSObject, BannerViewControllerWidthDelegate, GADBannerViewDelegate {
         let parent: BannerView
 
         init(_ parent: BannerView) {
@@ -46,6 +56,32 @@ struct BannerView: UIViewControllerRepresentable {
         func bannerViewController(_ bannerViewController: BannerViewController, didUpdate width: CGFloat) {
 
             parent.viewWidth = width
+        }
+        
+        // MARK: - GADBannerViewDelegate methods
+
+        func bannerViewDidReceiveAd(_: GADBannerView) {
+            print("\(#function) called")
+        }
+
+        func bannerView(_: GADBannerView, didFailToReceiveAdWithError _: Error) {
+            print("\(#function) called")
+        }
+
+        func bannerViewDidRecordImpression(_: GADBannerView) {
+            print("\(#function) called")
+        }
+
+        func bannerViewWillPresentScreen(_: GADBannerView) {
+            print("\(#function) called")
+        }
+
+        func bannerViewWillDismissScreen(_: GADBannerView) {
+            print("\(#function) called")
+        }
+
+        func bannerViewDidDismissScreen(_: GADBannerView) {
+            print("\(#function) called")
         }
     }
 }

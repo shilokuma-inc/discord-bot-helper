@@ -80,6 +80,8 @@ struct SendMessageView: View {
                 sendButton(isTapEnabled: isTapEnable)
             }
             .padding()
+            
+            BannerView()
         }
     }
 }
