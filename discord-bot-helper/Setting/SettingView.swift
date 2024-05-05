@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingView: View {
     let appInfo = AppInfo()
     @State private var isURLSettingPresented = false
+    @State private var isPrivacyPolicyPresented = false
     
     var body: some View {
         NavigationStack {
@@ -36,7 +37,14 @@ struct SettingView: View {
                         Text("このアプリについて")
                             .foregroundStyle(.gray)
                         
-                        Text("プライバシーポリシー")
+                        Button {
+                            isPrivacyPolicyPresented = true
+                        } label: {
+                            Text("プライバシーポリシー")
+                        }
+                        .navigationDestination(isPresented: $isPrivacyPolicyPresented) {
+                            PrivacyPolicyView()
+                        }
                         
                         Text("ライセンス")
                             .foregroundStyle(.gray)
