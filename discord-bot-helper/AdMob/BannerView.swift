@@ -12,7 +12,7 @@ struct BannerView: UIViewControllerRepresentable {
     @State private var viewWidth: CGFloat = .zero
     @EnvironmentObject private var sceneDelegate: MySceneDelegate
     private let bannerView = GADBannerView()
-    private let adUnitID = "ca-app-pub-3940256099942544/2934735716"
+    private let adUnitID = "ca-app-pub-7683522872696760~1123417271"
 
     func makeUIViewController(context: Context) -> some UIViewController {
         let bannerViewController = BannerViewController()
