@@ -32,7 +32,7 @@ struct SendMessageView: View {
                             placeholder: "URLを入れてください",
                             text: $inputURL
                         )
-                        .onChange(of: inputURL) {
+                        .onChange(of: inputURL, initial: true) { _ in
                             textFieldValidation()
                         }
                         
