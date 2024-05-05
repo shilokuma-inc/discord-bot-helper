@@ -25,6 +25,7 @@
 		4FAB6FFB2BE1C53B00B2F33A /* WebhookURLSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAB6FFA2BE1C53B00B2F33A /* WebhookURLSettingView.swift */; };
 		4FD55D492BE6F04700581F34 /* FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD55D482BE6F04700581F34 /* FirebaseAnalytics.swift */; };
 		4FD55D4B2BE6F92400581F34 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD55D4A2BE6F92400581F34 /* AppInfo.swift */; };
+		4FD55D502BE701FE00581F34 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD55D4F2BE701FE00581F34 /* PrivacyPolicyView.swift */; };
 		4FD55D4D2BE6FCB800581F34 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4FD55D4C2BE6FCB800581F34 /* PrivacyInfo.xcprivacy */; };
 		4FF2FEA52BDFAF4F00973FDA /* Extension+TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		4FAB6FFA2BE1C53B00B2F33A /* WebhookURLSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebhookURLSettingView.swift; sourceTree = "<group>"; };
 		4FD55D482BE6F04700581F34 /* FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalytics.swift; sourceTree = "<group>"; };
 		4FD55D4A2BE6F92400581F34 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		4FD55D4F2BE701FE00581F34 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		4FD55D4C2BE6FCB800581F34 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		4FF2FEA42BDFAF4F00973FDA /* Extension+TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TextFieldStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,10 +96,10 @@
 				4F5072B92BCF901E0005D352 /* SendMessageView.swift */,
 				4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */,
 				4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */,
-				4F435C8F2BE117840087CEE3 /* SettingView.swift */,
 				4FAB6FFA2BE1C53B00B2F33A /* WebhookURLSettingView.swift */,
 				4FD55D482BE6F04700581F34 /* FirebaseAnalytics.swift */,
 				4FD55D4A2BE6F92400581F34 /* AppInfo.swift */,
+				4FD55D4E2BE7019100581F34 /* Setting */,
 				4F5072BB2BCF901F0005D352 /* Assets.xcassets */,
 				4F5072BD2BCF901F0005D352 /* discord_bot_helper.entitlements */,
 				4F2CDC502BD31B4A000DF626 /* Info.plist */,
@@ -123,6 +125,15 @@
 				4FAB6FF72BE1A04D00B2F33A /* ci_post_clone.sh */,
 			);
 			path = ci_scripts;
+			sourceTree = "<group>";
+		};
+		4FD55D4E2BE7019100581F34 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4F435C8F2BE117840087CEE3 /* SettingView.swift */,
+				4FD55D4F2BE701FE00581F34 /* PrivacyPolicyView.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		4FF2FEA32BDFAEC300973FDA /* Extension */ = {
@@ -242,6 +253,7 @@
 				4F6755542BE008BC00F2629B /* AppDelegate.swift in Sources */,
 				4F435C8E2BE115650087CEE3 /* MainView.swift in Sources */,
 				4F5C1BF72BDDE8A9001C9A51 /* MessageEntity.swift in Sources */,
+				4FD55D502BE701FE00581F34 /* PrivacyPolicyView.swift in Sources */,
 				4FD55D4B2BE6F92400581F34 /* AppInfo.swift in Sources */,
 				4F5C1BF52BDDDC2C001C9A51 /* SendMessageViewModel.swift in Sources */,
 				4FF2FEA52BDFAF4F00973FDA /* Extension+TextFieldStyle.swift in Sources */,
