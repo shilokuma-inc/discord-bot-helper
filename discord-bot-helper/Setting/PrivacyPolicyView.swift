@@ -14,13 +14,14 @@ struct PrivacyPolicyView: View {
     var body: some View {
         if let privacyPolicyUrl = URL(string: privacyPolicyUrlString) {
             PrivacyPolicyWebView(url: privacyPolicyUrl)
+                .navigationTitle("プライバシーポリシー")
         } else {
             EmptyView()
         }
     }
 }
 
-struct PrivacyPolicyWebView: UIViewRepresentable {
+private struct PrivacyPolicyWebView: UIViewRepresentable {
     let url: URL
     
     func makeUIView(context: Context) -> WKWebView {
