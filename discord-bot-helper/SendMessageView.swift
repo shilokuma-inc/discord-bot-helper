@@ -134,8 +134,6 @@ extension SendMessageView {
     }
 }
 
-struct SendMessageView_Previews: PreviewProvider {
-    static var previews: some View {
-        SendMessageView()
-    }
+#Preview {
+    SendMessageView()
 }
