@@ -40,7 +40,15 @@ struct SettingView: View {
                         Button {
                             isPrivacyPolicyPresented = true
                         } label: {
-                            Text("プライバシーポリシー")
+                            HStack {
+                                Text("プライバシーポリシー")
+                                    .foregroundStyle(.black)
+                                
+                                Spacer()
+                                
+                                Image(systemName: "chevron.right")
+                                    .foregroundStyle(.gray)
+                            }
                         }
                         .navigationDestination(isPresented: $isPrivacyPolicyPresented) {
                             PrivacyPolicyView()
