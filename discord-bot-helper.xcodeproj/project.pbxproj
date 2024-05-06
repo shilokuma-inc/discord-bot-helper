@@ -178,6 +178,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4F87258C2BE8623D007D0F09 /* PBXTargetDependency */,
 			);
 			name = "discord-bot-helper";
 			packageProductDependencies = (
@@ -290,6 +291,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F87258C2BE8623D007D0F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4F87258B2BE8623D007D0F09 /* SwiftLintPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4F5072C12BCF901F0005D352 /* Debug */ = {
@@ -577,6 +585,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F67554C2BE0074A00F2629B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		4F87258B2BE8623D007D0F09 /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FAB6FF32BE1957000B2F33A /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
