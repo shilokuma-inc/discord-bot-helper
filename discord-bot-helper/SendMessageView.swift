@@ -26,13 +26,15 @@ struct SendMessageView: View {
                 .ignoresSafeArea(edges: [.top])
             VStack(spacing: .zero) {
                 VStack(spacing: 8.0) {
+                    Spacer()
+                    
                     HStack {
                         withIconTextFieldView(
                             icon: Image(systemName: "link.icloud.fill"),
                             placeholder: "URLを入れてください",
                             text: $inputURL
                         )
-                        .onChange(of: inputURL) {
+                        .onChange(of: inputURL, initial: true) { _ in
                             textFieldValidation()
                         }
                         
@@ -64,6 +66,7 @@ struct SendMessageView: View {
                         text: $inputContext
                     )
                 }
+                .padding(.horizontal)
 
                 Spacer()
                     .frame(height: 24.0)
@@ -73,13 +76,15 @@ struct SendMessageView: View {
                     placeholder: "埋め込みタイトルを入れてください",
                     text: $inputEmbedTitle
                 )
+                .padding(.horizontal)
 
                 Spacer()
                     .frame(height: 48.0)
 
                 sendButton(isTapEnabled: isTapEnable)
+                
+                BannerView()
             }
-            .padding()
         }
     }
 }
