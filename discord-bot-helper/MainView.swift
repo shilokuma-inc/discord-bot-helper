@@ -18,7 +18,7 @@ struct MainView: View {
                     Label("送信", systemImage: "paperplane.fill")
                 }
                 .tag(1)
-                .onAppear{
+                .onAppear {
                     analytics.sendAnalyticsScreen(screenName: "SendMessageView")
                 }
 
@@ -27,7 +27,7 @@ struct MainView: View {
                     Label("設定", systemImage: "gear")
                 }
                 .tag(2)
-                .onAppear{
+                .onAppear {
                     analytics.sendAnalyticsScreen(screenName: "SettingView")
                 }
         }
