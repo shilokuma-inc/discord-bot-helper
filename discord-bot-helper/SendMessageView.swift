@@ -21,7 +21,7 @@ struct SendMessageView: View {
 
     var body: some View {
         ZStack {
-            Color.init(cgColor: CGColor(red: 37/255, green: 39/255, blue: 43/255, alpha: 1))
+            Color.discordGray
                 .ignoresSafeArea(edges: [.top])
             VStack(spacing: .zero) {
                 VStack(spacing: 8.0) {
@@ -92,7 +92,7 @@ extension SendMessageView {
     private func withIconTextFieldView(icon: Image, placeholder: String, text: Binding<String>) -> some View {
         HStack {
             icon
-                .foregroundStyle(Color.init(cgColor: CGColor(red: 69/255, green: 73/255, blue: 239/255, alpha: 1)))
+                .foregroundStyle(Color.discordPurple)
                 .frame(width: 24.0, height: 24.0)
 
             TextField(placeholder, text: text)
