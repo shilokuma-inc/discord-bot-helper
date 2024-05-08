@@ -2,7 +2,14 @@
   "sourceLanguage" : "en",
   "strings" : {
     "URLを入れてください" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter Wehhook URL"
+          }
+        }
+      }
     },
     "URL設定" : {
       "localizations" : {
@@ -55,10 +62,24 @@
       }
     },
     "プロフィール画像のURLを入れてください" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter Wehhook URL for profile pic"
+          }
+        }
+      }
     },
     "メッセージを入れてください" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your message"
+          }
+        }
+      }
     },
     "メッセージを送信！" : {
       "localizations" : {
@@ -81,10 +102,24 @@
       }
     },
     "名前を入れてください" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your username"
+          }
+        }
+      }
     },
     "埋め込みタイトルを入れてください" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter embedded title"
+          }
+        }
+      }
     },
     "設定" : {
       "localizations" : {

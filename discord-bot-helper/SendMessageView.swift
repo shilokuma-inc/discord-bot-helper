@@ -90,13 +90,13 @@ struct SendMessageView: View {
 }
 
 extension SendMessageView {
-    private func withIconTextFieldView(icon: Image, placeholder: String, text: Binding<String>) -> some View {
+    private func withIconTextFieldView(icon: Image, placeholder: LocalizedStringResource, text: Binding<String>) -> some View {
         HStack {
             icon
                 .foregroundStyle(.indigo)
                 .frame(width: 24.0, height: 24.0)
 
-            TextField(placeholder, text: text)
+            TextField(String(localized: placeholder), text: text)
                 .textFieldStyle(.capsule)
         }
     }
