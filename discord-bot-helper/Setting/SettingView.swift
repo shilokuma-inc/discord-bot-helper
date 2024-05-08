@@ -15,7 +15,7 @@ struct SettingView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.discordGray
+                Color.discordDarkGray
                     .ignoresSafeArea(edges: [.top])
                 List {
                     Section(content: {
