@@ -15,7 +15,9 @@ struct CapsuleTextFieldStyle: TextFieldStyle {
         configuration
             .padding(.vertical, 8.0)
             .padding(.horizontal, 12.0)
-            .background(.gray.opacity(0.3), in: Capsule())
+            .foregroundStyle(.white)
+            .accentColor(.white)
+            .background((Color.discordLightGray), in: Capsule())
     }
 }
 
