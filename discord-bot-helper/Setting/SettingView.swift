@@ -24,6 +24,7 @@ struct SettingView: View {
                         } label: {
                             Text("URL設定")
                         }
+                        .listRowBackground(Color.discordGray)
                         .navigationDestination(isPresented: $isURLSettingPresented) {
                             WebhookURLSettingView()
                         }
@@ -36,6 +37,7 @@ struct SettingView: View {
                     Section(content: {
                         Text("このアプリについて")
                             .foregroundStyle(.gray)
+                            .listRowBackground(Color.discordGray)
 
                         Button {
                             isPrivacyPolicyPresented = true
@@ -50,12 +52,14 @@ struct SettingView: View {
                                     .foregroundStyle(.gray)
                             }
                         }
+                        .listRowBackground(Color.discordGray)
                         .navigationDestination(isPresented: $isPrivacyPolicyPresented) {
                             PrivacyPolicyView()
                         }
 
                         Text("ライセンス")
                             .foregroundStyle(.gray)
+                            .listRowBackground(Color.discordGray)
 
                         HStack {
                             Text("アプリバージョン")
@@ -65,6 +69,7 @@ struct SettingView: View {
                             Text(appInfo.getVersion())
                                 .foregroundStyle(.gray)
                         }
+                        .listRowBackground(Color.discordGray)
                     }, header: {
                         Text("アプリ情報")
                             .foregroundStyle(.white)
