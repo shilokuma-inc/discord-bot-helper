@@ -37,7 +37,14 @@
       }
     },
     "URL設定 (近日公開)" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL Setting (Coming Soon)"
+          }
+        }
+      }
     },
     "アプリバージョン" : {
       "localizations" : {
@@ -89,7 +96,14 @@
       }
     },
     "このアプリについて (近日公開)" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About this App (Coming Soon)"
+          }
+        }
+      }
     },
     "プライバシーポリシー" : {
       "localizations" : {
@@ -173,7 +187,14 @@
       }
     },
     "ライセンス (近日公開)" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "License (Coming Soon)"
+          }
+        }
+      }
     },
     "名前を入れてください" : {
       "localizations" : {
