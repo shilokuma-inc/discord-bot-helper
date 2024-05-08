@@ -103,12 +103,11 @@
 				4F6755532BE008BC00F2629B /* AppDelegate.swift */,
 				4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */,
 				4F435C8D2BE115650087CEE3 /* MainView.swift */,
-				4F5072B92BCF901E0005D352 /* SendMessageView.swift */,
-				4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */,
 				4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */,
 				4FAB6FFA2BE1C53B00B2F33A /* WebhookURLSettingView.swift */,
 				4FD55D482BE6F04700581F34 /* FirebaseAnalytics.swift */,
 				4FD55D4A2BE6F92400581F34 /* AppInfo.swift */,
+				4F6F9FAE2BEBD25B0033AFB7 /* SettingMessage */,
 				4FD55D4E2BE7019100581F34 /* Setting */,
 				4F7248F42BE827C5004FD3DC /* AdMob */,
 				4F5072BB2BCF901F0005D352 /* Assets.xcassets */,
@@ -128,6 +127,15 @@
 				4F5072BF2BCF901F0005D352 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F6F9FAE2BEBD25B0033AFB7 /* SettingMessage */ = {
+			isa = PBXGroup;
+			children = (
+				4F5072B92BCF901E0005D352 /* SendMessageView.swift */,
+				4F5C1BF42BDDDC2C001C9A51 /* SendMessageViewModel.swift */,
+			);
+			path = SettingMessage;
 			sourceTree = "<group>";
 		};
 		4F7248F42BE827C5004FD3DC /* AdMob */ = {
