@@ -11,7 +11,7 @@ struct SettingView: View {
     let appInfo = AppInfo()
     @State private var isURLSettingPresented = false
     @State private var isPrivacyPolicyPresented = false
-    
+
     var body: some View {
         NavigationStack {
             ZStack {
@@ -32,20 +32,20 @@ struct SettingView: View {
                     }, header: {
                         Text("送信先URL設定")
                     })
-                    
+
                     Section(content: {
                         Text("このアプリについて")
                             .foregroundStyle(.gray)
-                        
+
                         Button {
                             isPrivacyPolicyPresented = true
                         } label: {
                             HStack {
                                 Text("プライバシーポリシー")
                                     .foregroundStyle(.black)
-                                
+
                                 Spacer()
-                                
+
                                 Image(systemName: "chevron.right")
                                     .foregroundStyle(.gray)
                             }
@@ -53,15 +53,15 @@ struct SettingView: View {
                         .navigationDestination(isPresented: $isPrivacyPolicyPresented) {
                             PrivacyPolicyView()
                         }
-                        
+
                         Text("ライセンス")
                             .foregroundStyle(.gray)
-                        
+
                         HStack {
                             Text("アプリバージョン")
-                            
+
                             Spacer()
-                            
+
                             Text(appInfo.getVersion())
                                 .foregroundStyle(.gray)
                         }
