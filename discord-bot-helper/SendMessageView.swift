@@ -95,11 +95,18 @@ extension SendMessageView {
                 .foregroundStyle(Color.discordPurple)
                 .frame(width: 24.0, height: 24.0)
 
-            TextField(placeholder, text: text)
+            ZStack(alignment: .leading) {
+                TextField(
+                    "",
+                    text: text,
+                    prompt: Text(placeholder)
+                        .foregroundColor(Color.discordSuperLightGray)
+                )
                 .textFieldStyle(.capsule)
+            }
         }
     }
-    
+
     private func sendButton(isTapEnabled: Bool) -> some View {
         Button(action: {
             viewModel.postDiscordWebhook(url: inputURL,
