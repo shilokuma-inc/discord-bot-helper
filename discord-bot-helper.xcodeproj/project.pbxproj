@@ -23,6 +23,7 @@
 		4F6755522BE0074A00F2629B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F6755512BE0074A00F2629B /* FirebaseFirestore */; };
 		4F6755542BE008BC00F2629B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6755532BE008BC00F2629B /* AppDelegate.swift */; };
 		4F6755562BE0123900F2629B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F6755552BE0123900F2629B /* GoogleService-Info.plist */; };
+		4F6F9FB22BEBDEE40033AFB7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4F6F9FB12BEBDEE40033AFB7 /* Localizable.xcstrings */; };
 		4F6F9FAD2BEB9C820033AFB7 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6F9FAC2BEB9C820033AFB7 /* Extension+Color.swift */; };
 		4F7248F32BE825D2004FD3DC /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7248F22BE825D2004FD3DC /* BannerViewController.swift */; };
 		4F7248F62BE827DF004FD3DC /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7248F52BE827DF004FD3DC /* BannerView.swift */; };
@@ -50,6 +51,7 @@
 		4F5C1BF62BDDE8A9001C9A51 /* MessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEntity.swift; sourceTree = "<group>"; };
 		4F6755532BE008BC00F2629B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F6755552BE0123900F2629B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F6F9FB12BEBDEE40033AFB7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		4F6F9FAC2BEB9C820033AFB7 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		4F7248F22BE825D2004FD3DC /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		4F7248F52BE827DF004FD3DC /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				4FD55D4E2BE7019100581F34 /* Setting */,
 				4F7248F42BE827C5004FD3DC /* AdMob */,
 				4F5072BB2BCF901F0005D352 /* Assets.xcassets */,
+				4F6F9FB12BEBDEE40033AFB7 /* Localizable.xcstrings */,
 				4F5072BD2BCF901F0005D352 /* discord_bot_helper.entitlements */,
 				4F2CDC502BD31B4A000DF626 /* Info.plist */,
 				4FD55D4C2BE6FCB800581F34 /* PrivacyInfo.xcprivacy */,
@@ -224,7 +227,17 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
+				fr,
+				de,
+				ko,
+				it,
+				es,
+				ru,
+				ar,
 			);
 			mainGroup = 4F5072AB2BCF901E0005D352;
 			packageReferences = (
@@ -249,6 +262,7 @@
 			files = (
 				4FAB6FF22BE1923F00B2F33A /* swiftlint.yml in Resources */,
 				4F5072C02BCF901F0005D352 /* Preview Assets.xcassets in Resources */,
+				4F6F9FB22BEBDEE40033AFB7 /* Localizable.xcstrings in Resources */,
 				4F5072BC2BCF901F0005D352 /* Assets.xcassets in Resources */,
 				4FD55D4D2BE6FCB800581F34 /* PrivacyInfo.xcprivacy in Resources */,
 				4F6755562BE0123900F2629B /* GoogleService-Info.plist in Resources */,
