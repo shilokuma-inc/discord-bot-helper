@@ -23,6 +23,7 @@ struct SettingView: View {
                             isURLSettingPresented = true
                         } label: {
                             Text("URL設定")
+                                .foregroundStyle(.white)
                         }
                         .listRowBackground(Color.discordGray)
                         .navigationDestination(isPresented: $isURLSettingPresented) {
@@ -36,7 +37,7 @@ struct SettingView: View {
 
                     Section(content: {
                         Text("このアプリについて")
-                            .foregroundStyle(.gray)
+                            .foregroundStyle(.white)
                             .listRowBackground(Color.discordGray)
 
                         Button {
@@ -44,7 +45,7 @@ struct SettingView: View {
                         } label: {
                             HStack {
                                 Text("プライバシーポリシー")
-                                    .foregroundStyle(.black)
+                                    .foregroundStyle(.white)
 
                                 Spacer()
 
@@ -58,11 +59,12 @@ struct SettingView: View {
                         }
 
                         Text("ライセンス")
-                            .foregroundStyle(.gray)
+                            .foregroundStyle(.white)
                             .listRowBackground(Color.discordGray)
 
                         HStack {
                             Text("アプリバージョン")
+                                .foregroundStyle(.white)
 
                             Spacer()
 
