@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "URLを入れてください" : {
       "localizations" : {
         "en" : {
@@ -32,6 +35,9 @@
           }
         }
       }
+    },
+    "URL設定 (近日公開)" : {
+
     },
     "アプリバージョン" : {
       "localizations" : {
@@ -66,6 +72,7 @@
       }
     },
     "このアプリについて" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -80,6 +87,9 @@
           }
         }
       }
+    },
+    "このアプリについて (近日公開)" : {
+
     },
     "プライバシーポリシー" : {
       "localizations" : {
@@ -146,6 +156,7 @@
       }
     },
     "ライセンス" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -160,6 +171,9 @@
           }
         }
       }
+    },
+    "ライセンス (近日公開)" : {
+
     },
     "名前を入れてください" : {
       "localizations" : {

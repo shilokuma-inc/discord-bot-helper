@@ -21,8 +21,7 @@ struct SendMessageView: View {
 
     var body: some View {
         ZStack {
-            Color.cyan
-                .opacity(0.2)
+            Color.discordGray
                 .ignoresSafeArea(edges: [.top])
             VStack(spacing: .zero) {
                 VStack(spacing: 8.0) {
@@ -93,14 +92,21 @@ extension SendMessageView {
     private func withIconTextFieldView(icon: Image, placeholder: LocalizedStringResource, text: Binding<String>) -> some View {
         HStack {
             icon
-                .foregroundStyle(.indigo)
+                .foregroundStyle(Color.discordPurple)
                 .frame(width: 24.0, height: 24.0)
 
-            TextField(String(localized: placeholder), text: text)
+            ZStack(alignment: .leading) {
+                TextField(
+                    "",
+                    text: text,
+                    prompt: Text(String(localized: placeholder))
+                        .foregroundColor(Color.discordSuperLightGray)
+                )
                 .textFieldStyle(.capsule)
+            }
         }
     }
-    
+
     private func sendButton(isTapEnabled: Bool) -> some View {
         Button(action: {
             viewModel.postDiscordWebhook(url: inputURL,
