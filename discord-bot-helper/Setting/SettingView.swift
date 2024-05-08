@@ -30,6 +30,7 @@ struct SettingView: View {
                         .disabled(true)
                     }, header: {
                         Text("送信先URL設定")
+                            .foregroundStyle(.white)
                     })
 
                     Section(content: {
@@ -66,6 +67,7 @@ struct SettingView: View {
                         }
                     }, header: {
                         Text("アプリ情報")
+                            .foregroundStyle(.white)
                     })
                 }
                 .scrollContentBackground(.hidden)
