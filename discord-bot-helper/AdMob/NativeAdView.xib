@@ -33,7 +33,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Of-AP-0h9">
-                    <rect key="frame" x="4" y="412.5" width="100" height="17"/>
+                    <rect key="frame" x="4" y="432.5" width="100" height="17"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="17" id="jBW-Cz-Kyc"/>
                         <constraint firstAttribute="width" constant="100" id="sXk-zk-NI0"/>
@@ -49,7 +49,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5w-YA-UY8">
-                    <rect key="frame" x="320" y="404" width="47" height="34"/>
+                    <rect key="frame" x="320" y="227" width="47" height="428"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="Install">
                         <color key="titleColor" systemColor="systemGreenColor"/>
@@ -57,13 +57,13 @@
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysb-of-cat">
-                    <rect key="frame" x="232" y="412.5" width="33" height="17"/>
+                    <rect key="frame" x="232" y="432.5" width="33" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwF-UL-Q8H">
-                    <rect key="frame" x="275" y="412.5" width="35" height="17"/>
+                    <rect key="frame" x="275" y="432.5" width="35" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -105,9 +105,9 @@
                 <constraint firstItem="hwF-UL-Q8H" firstAttribute="leading" secondItem="Ysb-of-cat" secondAttribute="trailing" constant="10" id="aLb-sm-wAb"/>
                 <constraint firstAttribute="trailing" secondItem="E5w-YA-UY8" secondAttribute="trailing" constant="8" id="eNM-dN-tvx"/>
                 <constraint firstItem="E5w-YA-UY8" firstAttribute="leading" secondItem="hwF-UL-Q8H" secondAttribute="trailing" constant="10" id="f39-vH-KWq"/>
-                <constraint firstItem="Ysb-of-cat" firstAttribute="top" secondItem="fNp-yu-K4i" secondAttribute="bottom" constant="4" id="fP8-wI-mHH"/>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="E5w-YA-UY8" secondAttribute="bottom" constant="4" id="i1B-Bd-SBw"/>
+                <constraint firstItem="Ysb-of-cat" firstAttribute="top" secondItem="fNp-yu-K4i" secondAttribute="bottom" constant="24" id="fP8-wI-mHH"/>
                 <constraint firstItem="iNa-bH-h1m" firstAttribute="leading" secondItem="PEQ-D9-2Vv" secondAttribute="leading" id="mof-5F-8vM"/>
+                <constraint firstAttribute="bottom" secondItem="E5w-YA-UY8" secondAttribute="bottom" constant="12" id="pMX-cY-Gwe"/>
                 <constraint firstItem="E5w-YA-UY8" firstAttribute="centerY" secondItem="hwF-UL-Q8H" secondAttribute="centerY" id="rNj-VY-YrO"/>
                 <constraint firstAttribute="trailing" secondItem="GTT-Yh-eSq" secondAttribute="trailing" constant="8" id="rvG-lb-cC0"/>
                 <constraint firstItem="iNa-bH-h1m" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="tPq-bm-B7J"/>
