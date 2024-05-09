@@ -13,7 +13,12 @@ class NativeAdModel: NSObject, ObservableObject, GADNativeAdLoaderDelegate {
 
     func load(windowScene: UIWindowScene?,
               rootViewController: UIViewController?) {
-        let adLoader = GADAdLoader(adUnitID: "ca-app-pub-7683522872696760/1379062983", rootViewController: rootViewController, adTypes: [.native], options: nil)
+        let adLoader = GADAdLoader(
+            adUnitID: "ca-app-pub-7683522872696760/1379062983",
+            rootViewController: rootViewController,
+            adTypes: [.native],
+            options: nil
+        )
         self.adLoader = adLoader
         adLoader.delegate = self
         let request = GADRequest()

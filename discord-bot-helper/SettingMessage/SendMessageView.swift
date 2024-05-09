@@ -15,7 +15,7 @@ struct SendMessageView: View {
     @State var inputContext = ""
 
     @State var inputEmbedTitle = ""
-    
+
     @State var isTapEnable: Bool = false
     private var viewModel = SendMessageViewModel()
 
@@ -26,7 +26,7 @@ struct SendMessageView: View {
             VStack(spacing: .zero) {
                 VStack(spacing: 8.0) {
                     Spacer()
-                    
+
                     HStack {
                         withIconTextFieldView(
                             icon: Image(systemName: "link.icloud.fill"),
@@ -36,7 +36,7 @@ struct SendMessageView: View {
                         .onChange(of: inputURL, initial: true) { _ in
                             textFieldValidation()
                         }
-                        
+
                         if !inputURL.isEmpty {
                             Button(action: {
                                 inputURL = ""
@@ -81,7 +81,7 @@ struct SendMessageView: View {
                     .frame(height: 48.0)
 
                 sendButton(isTapEnabled: isTapEnable)
-                
+
                 BannerView()
             }
         }
@@ -89,7 +89,11 @@ struct SendMessageView: View {
 }
 
 extension SendMessageView {
-    private func withIconTextFieldView(icon: Image, placeholder: LocalizedStringResource, text: Binding<String>) -> some View {
+    private func withIconTextFieldView(
+        icon: Image,
+        placeholder: LocalizedStringResource,
+        text: Binding<String>
+    ) -> some View {
         HStack {
             icon
                 .foregroundStyle(Color.discordPurple)

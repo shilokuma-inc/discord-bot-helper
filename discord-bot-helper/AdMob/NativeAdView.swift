@@ -11,8 +11,10 @@ import GoogleMobileAds
 struct NativeAdView: UIViewRepresentable {
     let nativeAd: GADNativeAd
     func makeUIView(context: Context) -> GADNativeAdView {
-        // swiftlint:disable:next force_cast
-        let nativeAdView: GADNativeAdView = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil)?.first as! GADNativeAdView
+        // swiftlint:disable force_cast
+        let nativeAdView: GADNativeAdView = Bundle.main.loadNibNamed(
+            "NativeAdView", owner: nil, options: nil
+        )?.first as! GADNativeAdView
 
         (nativeAdView.bodyView as? UILabel)?.text = nativeAd.body
         nativeAdView.bodyView?.isHidden = nativeAd.body == nil
