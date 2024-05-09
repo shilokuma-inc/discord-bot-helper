@@ -23,9 +23,10 @@ struct BannerView: UIViewControllerRepresentable {
         bannerViewController.view.addSubview(bannerView)
 
         NSLayoutConstraint.activate(
-            [bannerView.bottomAnchor.constraint(
-                equalTo: bannerViewController.view.safeAreaLayoutGuide.bottomAnchor),
-             bannerView.centerXAnchor.constraint(equalTo: bannerViewController.view.centerXAnchor),
+            [
+                bannerView.bottomAnchor.constraint(
+                    equalTo: bannerViewController.view.safeAreaLayoutGuide.bottomAnchor),
+                bannerView.centerXAnchor.constraint(equalTo: bannerViewController.view.centerXAnchor)
             ]
         )
 
