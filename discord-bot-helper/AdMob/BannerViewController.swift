@@ -24,7 +24,10 @@ class BannerViewController: UIViewController {
         coordinator.animate { _ in
             // do nothing
         } completion: { _ in
-            self.delegate?.bannerViewController(self, didUpdate: self.view.frame.inset(by: self.view.safeAreaInsets).size.width)
+            self.delegate?.bannerViewController(
+                self,
+                didUpdate: self.view.frame.inset(by: self.view.safeAreaInsets).size.width
+            )
         }
     }
 }

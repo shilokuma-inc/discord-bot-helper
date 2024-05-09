@@ -9,7 +9,9 @@ import Foundation
 
 final class AppInfo {
     func getVersion() -> String {
-        guard let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String else { return "" }
+        guard let version = Bundle.main.object(
+            forInfoDictionaryKey: "CFBundleShortVersionString"
+        ) as? String else { return "" }
         return "v\(version)"
     }
 }

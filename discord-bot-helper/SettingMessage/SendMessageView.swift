@@ -89,7 +89,11 @@ struct SendMessageView: View {
 }
 
 extension SendMessageView {
-    private func withIconTextFieldView(icon: Image, placeholder: LocalizedStringResource, text: Binding<String>) -> some View {
+    private func withIconTextFieldView(
+        icon: Image,
+        placeholder: LocalizedStringResource,
+        text: Binding<String>
+    ) -> some View {
         HStack {
             icon
                 .foregroundStyle(Color.discordPurple)
