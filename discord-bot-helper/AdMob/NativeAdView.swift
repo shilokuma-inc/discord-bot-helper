@@ -35,11 +35,11 @@ struct NativeAdView: UIViewRepresentable {
         nativeAdView.callToActionView?.isUserInteractionEnabled = false
 
         nativeAdView.nativeAd = nativeAd
-        
+
         return nativeAdView
     }
-    
+
     func updateUIView(_ uiView: GADNativeAdView, context: Context) {
-        
+
     }
 }
