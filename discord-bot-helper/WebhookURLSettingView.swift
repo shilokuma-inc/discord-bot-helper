@@ -21,7 +21,7 @@ struct WebhookURLSettingView: View {
 
                 Button(action: {
                     dismiss()
-                }) {
+                }, label: {
                     Text("設定完了")
                         .font(.system(size: 24, weight: .semibold, design: .default))
                         .foregroundStyle(.gray)
@@ -31,7 +31,7 @@ struct WebhookURLSettingView: View {
                                 .foregroundStyle(.ultraThickMaterial)
                                 .shadow(radius: 5.0)
                         )
-                }
+                })
             }
         }
         .navigationBarHidden(true)
