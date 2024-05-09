@@ -82,7 +82,7 @@ struct SettingView: View {
 
                     if let nativeAd = model.nativeAd {
                         NativeAdView(nativeAd: nativeAd)
-                            .aspectRatio(16 / 9 , contentMode: .fit)
+                            .aspectRatio(4 / 3, contentMode: .fit)
                             .listRowInsets(EdgeInsets())
                     }
                 }
