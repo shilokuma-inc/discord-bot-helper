@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SettingView: View {
     let appInfo = AppInfo()
+
+    @EnvironmentObject private var sceneDelegate: MySceneDelegate
+    @StateObject private var model = NativeAdModel()
     @State private var isURLSettingPresented = false
     @State private var isPrivacyPolicyPresented = false
 
@@ -76,10 +79,23 @@ struct SettingView: View {
                         Text("アプリ情報")
                             .foregroundStyle(.white)
                     })
+
+                    if let nativeAd = model.nativeAd {
+                        NativeAdView(nativeAd: nativeAd)
+                            .aspectRatio(16 / 9, contentMode: .fit)
+                    }
                 }
+                .onAppear(perform: loadAd)
                 .scrollContentBackground(.hidden)
                 .background(.clear)
             }
         }
+    }
+
+    private func loadAd() {
+        model.load(
+            windowScene: sceneDelegate.windowScene,
+            rootViewController: sceneDelegate.window?.rootViewController
+        )
     }
 }
