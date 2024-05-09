@@ -9,16 +9,16 @@ import SwiftUI
 
 struct WebhookURLSettingView: View {
     @Environment(\.dismiss) private var dismiss
-    
+
     var body: some View {
         ZStack {
             Color.pink
                 .opacity(0.2)
                 .ignoresSafeArea(edges: [.top])
-            
+
             VStack(spacing: 32.0) {
                 Text("URL設定")
-                
+
                 Button(action: {
                     dismiss()
                 }) {
