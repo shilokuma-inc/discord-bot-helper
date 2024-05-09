@@ -14,7 +14,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil)
     -> Bool {
         FirebaseApp.configure()
-        
+
         GADMobileAds.sharedInstance().start(completionHandler: nil)
 
         return true
@@ -27,7 +27,11 @@ class MySceneDelegate: NSObject, UIWindowSceneDelegate, ObservableObject {
         windowScene?.keyWindow
     }
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    func scene(
+        _ scene: UIScene,
+        willConnectTo session: UISceneSession,
+        options connectionOptions: UIScene.ConnectionOptions
+    ) {
         windowScene = scene as? UIWindowScene
     }
 }

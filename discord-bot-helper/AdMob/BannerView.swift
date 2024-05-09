@@ -21,14 +21,15 @@ struct BannerView: UIViewControllerRepresentable {
         bannerView.delegate = context.coordinator
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         bannerViewController.view.addSubview(bannerView)
-        
+
         NSLayoutConstraint.activate(
-            [bannerView.bottomAnchor.constraint(
-                equalTo: bannerViewController.view.safeAreaLayoutGuide.bottomAnchor),
-             bannerView.centerXAnchor.constraint(equalTo: bannerViewController.view.centerXAnchor),
+            [
+                bannerView.bottomAnchor.constraint(
+                    equalTo: bannerViewController.view.safeAreaLayoutGuide.bottomAnchor),
+                bannerView.centerXAnchor.constraint(equalTo: bannerViewController.view.centerXAnchor)
             ]
         )
-        
+
         bannerViewController.delegate = context.coordinator
 
         return bannerViewController
@@ -41,11 +42,11 @@ struct BannerView: UIViewControllerRepresentable {
         bannerView.adSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth)
         bannerView.load(GADRequest())
     }
-    
+
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
-    
+
     class Coordinator: NSObject, BannerViewControllerWidthDelegate, GADBannerViewDelegate {
         let parent: BannerView
 
@@ -58,7 +59,7 @@ struct BannerView: UIViewControllerRepresentable {
 
             parent.viewWidth = width
         }
-        
+
         // MARK: - GADBannerViewDelegate methods
 
         func bannerViewDidReceiveAd(_: GADBannerView) {
