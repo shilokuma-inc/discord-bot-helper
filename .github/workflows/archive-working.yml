@@ -25,7 +25,7 @@ jobs:
       - name: Archive Project
         run: |                        
           xcodebuild archive -project discord-bot-helper.xcodeproj \
-                             -scheme NinjacordApp \
+                             -scheme discord-bot-helper \
                              -sdk iphoneos \
                              -configuration Release \
                              -archivePath NinjacordApp.xcarchive \
