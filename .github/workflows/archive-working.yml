@@ -1,0 +1,52 @@
+name: PrimePickApp
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!main'
+
+jobs:          
+  build:
+    name: Archive | working
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set Default Scheme
+        run: |
+          scheme_list=$(xcodebuild -list -json | tr -d "\n")
+          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
+          echo $default | cat >default
+          echo Using default scheme: $default
+
+      - name: Archive Project
+        run: |                        
+          xcodebuild archive -project PrimePickApp.xcodeproj \
+                             -scheme PrimePickApp \
+                             -sdk iphoneos \
+                             -configuration Release \
+                             -archivePath PrimePickApp.xcarchive \
+                             CODE_SIGNING_ALLOWED=NO
+
+      - name: Create ExportOptions.plist
+        run: |
+          echo '${{ secrets.EXPORT_OPTIONS }}' > ExportOptions.plist
+
+      - name: Create Private Key
+        run: |
+          mkdir private_keys
+          echo -n '${{ secrets.APPLE_API_KEY_BASE64 }}' | base64 --decode > ./private_keys/AuthKey_${{ secrets.APPLE_API_ISSUER_ID }}.p8
+
+      - name: Export IPA
+        run: |   
+          xcodebuild -exportArchive \
+                     -archivePath PrimePickApp.xcarchive \
+                     -exportOptionsPlist ExportOptions.plist \
+                     -exportPath app.ipa \
+                     -allowProvisioningUpdates \
+                     -authenticationKeyPath `pwd`/private_keys/AuthKey_${{ secrets.APPLE_API_ISSUER_ID }}.p8 \
+                     -authenticationKeyID ${{ secrets.APPLE_API_KEY_ID }} \
+                     -authenticationKeyIssuerID ${{ secrets.APPLE_API_ISSUER_ID }}
