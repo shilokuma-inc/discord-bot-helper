@@ -2,14 +2,11 @@ name: NinjacordApp
 
 on:
   push:
-    branches:
-      - '**'
-      - '!main'
-      - '!develop'
+    branches: develop
 
 jobs:          
   build:
-    name: Archive | working
+    name: Release | develop
     runs-on: macos-latest
 
     steps:
@@ -61,3 +58,10 @@ jobs:
                      -authenticationKeyPath `pwd`/private_keys/AuthKey_${{ secrets.APPLE_API_ISSUER_ID }}.p8 \
                      -authenticationKeyID ${{ secrets.APPLE_API_KEY_ID }} \
                      -authenticationKeyIssuerID ${{ secrets.APPLE_API_ISSUER_ID }}
+
+      - name: Upload IPA to App Store Connect
+        run: |
+          xcrun altool --upload-app -f app.ipa/NinjacordApp.ipa \
+                       -u ${{ secrets.APPLE_ID }} \
+                       -p ${{ secrets.APP_SPECIFIC_PASSWORD }} \
+                       --type ios

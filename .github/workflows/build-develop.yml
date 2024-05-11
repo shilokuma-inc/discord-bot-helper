@@ -2,14 +2,11 @@ name: NinjacordApp
 
 on:
   push:
-    branches:
-      - '**'
-      - '!main'
-      - '!develop'
+    branches: develop
 
 jobs:
   build:
-    name: Build | working
+    name: Build | develop
     runs-on: macos-latest
 
     steps:
@@ -28,9 +25,7 @@ jobs:
 
       - name: Set Default Scheme
         run: |
-          xcodebuild -resolvePackageDependencies -project discord-bot-helper.xcodeproj -scheme discord-bot-helper
-          scheme_list=$(xcodebuild -list -json)
-          echo "$scheme_list"
+          scheme_list=$(xcodebuild -list -json | tr -d "\n")
           default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
           echo $default | cat >default
           echo Using default scheme: $default
