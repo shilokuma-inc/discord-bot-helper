@@ -9,12 +9,12 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enter Wehhook URL"
+            "value" : "Enter Webhook URL"
           }
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "URLを入れてください"
           }
         }
