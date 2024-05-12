@@ -58,7 +58,7 @@ jobs:
                      -authenticationKeyID ${{ secrets.APPLE_API_KEY_ID }} \
                      -authenticationKeyIssuerID ${{ secrets.APPLE_API_ISSUER_ID }}
 
-      - name: upload ipa file
+      - name: Upload IPA to GitHub
         uses: actions/upload-artifact@v3
         with:
           name: NinjacordApp.ipa
