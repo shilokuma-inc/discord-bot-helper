@@ -47,7 +47,7 @@
 		4F3A7B542BE836BF0046765E /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		4F435C8D2BE115650087CEE3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4F435C8F2BE117840087CEE3 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		4F5072B42BCF901E0005D352 /* discord-bot-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "discord-bot-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5072B42BCF901E0005D352 /* NinjacordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjacordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5072B72BCF901E0005D352 /* discord_bot_helperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discord_bot_helperApp.swift; sourceTree = "<group>"; };
 		4F5072B92BCF901E0005D352 /* SendMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageView.swift; sourceTree = "<group>"; };
 		4F5072BB2BCF901F0005D352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		4F5072B52BCF901E0005D352 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F5072B42BCF901E0005D352 /* discord-bot-helper.app */,
+				4F5072B42BCF901E0005D352 /* NinjacordApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F5072B32BCF901E0005D352 /* discord-bot-helper */ = {
+		4F5072B32BCF901E0005D352 /* NinjacordApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F5072C32BCF901F0005D352 /* Build configuration list for PBXNativeTarget "discord-bot-helper" */;
+			buildConfigurationList = 4F5072C32BCF901F0005D352 /* Build configuration list for PBXNativeTarget "NinjacordApp" */;
 			buildPhases = (
 				4F5072B02BCF901E0005D352 /* Sources */,
 				4F5072B12BCF901E0005D352 /* Frameworks */,
@@ -203,7 +203,7 @@
 			dependencies = (
 				4F87258C2BE8623D007D0F09 /* PBXTargetDependency */,
 			);
-			name = "discord-bot-helper";
+			name = NinjacordApp;
 			packageProductDependencies = (
 				4F0EC9592BD1A2C3009A5CB6 /* Alamofire */,
 				4F67554D2BE0074A00F2629B /* FirebaseAnalytics */,
@@ -212,7 +212,7 @@
 				4F07581F2BE81F2D0064A30F /* GoogleMobileAds */,
 			);
 			productName = "discord-bot-helper";
-			productReference = 4F5072B42BCF901E0005D352 /* discord-bot-helper.app */;
+			productReference = 4F5072B42BCF901E0005D352 /* NinjacordApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -230,7 +230,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4F5072AF2BCF901E0005D352 /* Build configuration list for PBXProject "discord-bot-helper" */;
+			buildConfigurationList = 4F5072AF2BCF901E0005D352 /* Build configuration list for PBXProject "NinjacordApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -259,7 +259,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F5072B32BCF901E0005D352 /* discord-bot-helper */,
+				4F5072B32BCF901E0005D352 /* NinjacordApp */,
 			);
 		};
 /* End PBXProject section */
@@ -545,7 +545,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F5072AF2BCF901E0005D352 /* Build configuration list for PBXProject "discord-bot-helper" */ = {
+		4F5072AF2BCF901E0005D352 /* Build configuration list for PBXProject "NinjacordApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F5072C12BCF901F0005D352 /* Debug */,
@@ -554,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F5072C32BCF901F0005D352 /* Build configuration list for PBXNativeTarget "discord-bot-helper" */ = {
+		4F5072C32BCF901F0005D352 /* Build configuration list for PBXNativeTarget "NinjacordApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F5072C42BCF901F0005D352 /* Debug */,

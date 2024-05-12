@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4F5072B32BCF901E0005D352"
-               BuildableName = "discord-bot-helper.app"
-               BlueprintName = "discord-bot-helper"
-               ReferencedContainer = "container:discord-bot-helper.xcodeproj">
+               BuildableName = "NinjacordApp.app"
+               BlueprintName = "NinjacordApp"
+               ReferencedContainer = "container:NinjacordApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F5072B32BCF901E0005D352"
-            BuildableName = "discord-bot-helper.app"
-            BlueprintName = "discord-bot-helper"
-            ReferencedContainer = "container:discord-bot-helper.xcodeproj">
+            BuildableName = "NinjacordApp.app"
+            BlueprintName = "NinjacordApp"
+            ReferencedContainer = "container:NinjacordApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F5072B32BCF901E0005D352"
-            BuildableName = "discord-bot-helper.app"
-            BlueprintName = "discord-bot-helper"
-            ReferencedContainer = "container:discord-bot-helper.xcodeproj">
+            BuildableName = "NinjacordApp.app"
+            BlueprintName = "NinjacordApp"
+            ReferencedContainer = "container:NinjacordApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
