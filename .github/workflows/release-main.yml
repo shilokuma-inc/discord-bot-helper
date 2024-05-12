@@ -58,6 +58,12 @@ jobs:
                      -authenticationKeyID ${{ secrets.APPLE_API_KEY_ID }} \
                      -authenticationKeyIssuerID ${{ secrets.APPLE_API_ISSUER_ID }}
 
+      - name: upload ipa file
+        uses: actions/upload-artifact@v3
+        with:
+          name: NinjacordApp.ipa
+          path: app.ipa/NinjacordApp.ipa
+
       - name: Upload IPA to App Store Connect
         run: |
           xcrun altool --upload-app -f app.ipa/NinjacordApp.ipa \
