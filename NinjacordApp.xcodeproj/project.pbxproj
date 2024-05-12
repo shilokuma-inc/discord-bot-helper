@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4F0758202BE81F2D0064A30F /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 4F07581F2BE81F2D0064A30F /* GoogleMobileAds */; };
 		4F0EC95A2BD1A2C3009A5CB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0EC9592BD1A2C3009A5CB6 /* Alamofire */; };
-		4F11A8372BF0D92D00884BB1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2CDC502BD31B4A000DF626 /* Info.plist */; };
 		4F31E3B62BECEE1E00F299EE /* NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31E3B52BECEE1E00F299EE /* NativeAdView.swift */; };
 		4F31E3B82BECEED700F299EE /* NativeAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31E3B72BECEED700F299EE /* NativeAdModel.swift */; };
 		4F31E3BA2BECF70C00F299EE /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F31E3B92BECF70B00F299EE /* NativeAdView.xib */; };
@@ -270,7 +269,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F11A8372BF0D92D00884BB1 /* Info.plist in Resources */,
 				4FAB6FF22BE1923F00B2F33A /* swiftlint.yml in Resources */,
 				4F5072C02BCF901F0005D352 /* Preview Assets.xcassets in Resources */,
 				4F6F9FB22BEBDEE40033AFB7 /* Localizable.xcstrings in Resources */,
