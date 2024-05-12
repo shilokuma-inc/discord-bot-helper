@@ -1,6 +1,6 @@
 //
 //  SendMessageViewModel.swift
-//  discord-bot-helper
+//  NinjacordApp
 //
 //  Created by 村石 拓海 on 2024/04/28.
 //

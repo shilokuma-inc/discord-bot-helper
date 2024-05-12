@@ -1,6 +1,6 @@
 //
 //  Extension+View.swift
-//  discord-bot-helper
+//  NinjacordApp
 //
 //  Created by 村石 拓海 on 2024/05/06.
 //

@@ -32,7 +32,7 @@ jobs:
       - name: Archive Project
         run: |                        
           xcodebuild archive -project NinjacordApp.xcodeproj \
-                             -scheme discord-bot-helper \
+                             -scheme NinjacordApp \
                              -sdk iphoneos \
                              -configuration Release \
                              -archivePath NinjacordApp.xcarchive \
@@ -60,7 +60,7 @@ jobs:
 
       - name: Upload IPA to App Store Connect
         run: |
-          xcrun altool --upload-app -f app.ipa/discord-bot-helper.ipa \
+          xcrun altool --upload-app -f app.ipa/NinjacordApp.ipa \
                        -u ${{ secrets.APPLE_ID }} \
                        -p ${{ secrets.APP_SPECIFIC_PASSWORD }} \
                        --type ios

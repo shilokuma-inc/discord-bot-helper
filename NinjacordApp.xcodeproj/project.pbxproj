@@ -211,7 +211,7 @@
 				4F6755512BE0074A00F2629B /* FirebaseFirestore */,
 				4F07581F2BE81F2D0064A30F /* GoogleMobileAds */,
 			);
-			productName = "discord-bot-helper";
+			productName = "NinjacordApp";
 			productReference = 4F5072B42BCF901E0005D352 /* NinjacordApp.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -459,17 +459,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "discord-bot-helper/NinjacordApp.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "NinjacordApp/NinjacordApp.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"discord-bot-helper/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NinjacordApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XU74X3434S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "discord-bot-helper/Info.plist";
+				INFOPLIST_FILE = "NinjacordApp/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ninja Cord";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -503,17 +503,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "discord-bot-helper/NinjacordApp.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "NinjacordApp/NinjacordApp.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"discord-bot-helper/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NinjacordApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XU74X3434S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "discord-bot-helper/Info.plist";
+				INFOPLIST_FILE = "NinjacordApp/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ninja Cord";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
