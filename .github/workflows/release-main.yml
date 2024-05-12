@@ -32,8 +32,8 @@ jobs:
 
       - name: Archive Project
         run: |                        
-          xcodebuild archive -project discord-bot-helper.xcodeproj \
-                             -scheme discord-bot-helper \
+          xcodebuild archive -project NinjacordApp.xcodeproj \
+                             -scheme NinjacordApp \
                              -sdk iphoneos \
                              -configuration Release \
                              -archivePath NinjacordApp.xcarchive \
@@ -58,6 +58,18 @@ jobs:
                      -authenticationKeyPath `pwd`/private_keys/AuthKey_${{ secrets.APPLE_API_ISSUER_ID }}.p8 \
                      -authenticationKeyID ${{ secrets.APPLE_API_KEY_ID }} \
                      -authenticationKeyIssuerID ${{ secrets.APPLE_API_ISSUER_ID }}
+
+      - name: Upload IPA to GitHub
+        uses: actions/upload-artifact@v3
+        with:
+          name: NinjacordApp.ipa
+          path: app.ipa/NinjacordApp.ipa
+
+      - name: Upload ipa file by Action
+        uses: actions/upload-artifact@v3
+        with:
+          name: NinjacordApp.ipa
+          path: app.ipa/NinjacordApp.ipa
 
       - name: Upload IPA to App Store Connect
         run: |
