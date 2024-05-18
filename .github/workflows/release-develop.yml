@@ -34,7 +34,6 @@ jobs:
 
       - name: Archive Project
         run: |
-          set -x
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
           default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")              
@@ -44,7 +43,6 @@ jobs:
                               -configuration Release \
                               -archivePath build.xcarchive \
                               CODE_SIGNING_ALLOWED=NO
-          set +x
 
       - name: Create ExportOptions.plist
         run: |
