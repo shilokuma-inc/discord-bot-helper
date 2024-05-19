@@ -17,12 +17,19 @@ struct SendMessageView: View {
     @State var inputEmbedTitle = ""
 
     @State var isTapEnable: Bool = false
+    @State private var isEditing: Bool = false
     private var viewModel = SendMessageViewModel()
 
     var body: some View {
         ZStack {
             Color.discordGray
                 .ignoresSafeArea(edges: [.top])
+                .onTapGesture {
+                    if self.isEditing {
+                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                        self.isEditing = false
+                    }
+                }
             VStack(spacing: .zero) {
                 VStack(spacing: 8.0) {
                     Spacer()
@@ -35,6 +42,9 @@ struct SendMessageView: View {
                         )
                         .onChange(of: inputURL, initial: true) { _ in
                             textFieldValidation()
+                        }
+                        .onTapGesture {
+                            self.isEditing = true
                         }
 
                         if !inputURL.isEmpty {
@@ -52,18 +62,28 @@ struct SendMessageView: View {
                         placeholder: "名前を入れてください",
                         text: $inputUsername
                     )
+                    .onTapGesture {
+                        self.isEditing = true
+                        print(isEditing)
+                    }
 
                     withIconTextFieldView(
                         icon: Image(systemName: "person.crop.square"),
                         placeholder: "プロフィール画像のURLを入れてください",
                         text: $inputAvatarURL
                     )
+                    .onTapGesture {
+                        self.isEditing = true
+                    }
 
                     withIconTextFieldView(
                         icon: Image(systemName: "square.and.pencil"),
                         placeholder: "メッセージを入れてください",
                         text: $inputContext
                     )
+                    .onTapGesture {
+                        self.isEditing = true
+                    }
                 }
                 .padding(.horizontal)
 
@@ -76,6 +96,9 @@ struct SendMessageView: View {
                     text: $inputEmbedTitle
                 )
                 .padding(.horizontal)
+                .onTapGesture {
+                    self.isEditing = true
+                }
 
                 Spacer()
                     .frame(height: 48.0)
