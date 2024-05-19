@@ -66,7 +66,6 @@ struct SendMessageView: View {
                     )
                     .onTapGesture {
                         self.isEditing = true
-                        print(isEditing)
                     }
 
                     withIconTextFieldView(
