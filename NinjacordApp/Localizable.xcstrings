@@ -5,7 +5,20 @@
 
     },
     " (近日公開)" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " (Coming Soon)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " (近日公開)"
+          }
+        }
+      }
     },
     "URLを入れてください" : {
       "localizations" : {
