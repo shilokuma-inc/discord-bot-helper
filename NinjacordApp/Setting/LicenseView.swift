@@ -13,10 +13,17 @@ struct LicenseView: View {
         ZStack {
             Color.discordDarkGray
                 .ignoresSafeArea(edges: [.top])
-            List(Library.libraries, id: \.name) { library in
-                Text(library.name)
-                    .listRowBackground(Color.discordGray)
-                    .foregroundStyle(.white)
+            List {
+                Section(content: {
+                    ForEach(Library.libraries, id: \.name) { library in
+                        Text(library.name)
+                            .listRowBackground(Color.discordGray)
+                            .foregroundStyle(.white)
+                    }
+                }, header: {
+                    Text("ライセンス一覧")
+                        .foregroundStyle(.white)
+                })
             }
             .scrollContentBackground(.hidden)
             .background(.clear)
