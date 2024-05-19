@@ -41,6 +41,7 @@ struct SettingView: View {
 
                     Section(content: {
                         Text("このアプリについて")
+                            .addComingSoon()
                             .foregroundStyle(.white)
                             .listRowBackground(Color.discordGray)
 
@@ -63,6 +64,7 @@ struct SettingView: View {
                         }
 
                         Text("ライセンス")
+                            .addComingSoon()
                             .foregroundStyle(.white)
                             .listRowBackground(Color.discordGray)
 
