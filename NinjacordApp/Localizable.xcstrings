@@ -39,23 +39,6 @@
         }
       }
     },
-    "URL設定 (近日公開)" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "URL Setting (Coming Soon)"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "URL設定 (近日公開)"
-          }
-        }
-      }
-    },
     "アプリバージョン" : {
       "localizations" : {
         "en" : {
@@ -100,23 +83,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "このアプリについて"
-          }
-        }
-      }
-    },
-    "このアプリについて (近日公開)" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "About this App (Coming Soon)"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "このアプリについて (近日公開)"
           }
         }
       }
@@ -197,23 +163,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ライセンス"
-          }
-        }
-      }
-    },
-    "ライセンス (近日公開)" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "License (Coming Soon)"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ライセンス (近日公開)"
           }
         }
       }
