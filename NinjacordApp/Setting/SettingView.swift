@@ -13,6 +13,7 @@ struct SettingView: View {
     @EnvironmentObject private var sceneDelegate: MySceneDelegate
     @StateObject private var model = NativeAdModel()
     @State private var isURLSettingPresented = false
+    @State private var isLicensePresented = false
     @State private var isPrivacyPolicyPresented = false
 
     var body: some View {
@@ -63,10 +64,23 @@ struct SettingView: View {
                             PrivacyPolicyView()
                         }
 
-                        Text("ライセンス")
-                            .addComingSoon()
-                            .foregroundStyle(.white)
-                            .listRowBackground(Color.discordGray)
+                        Button {
+                            isLicensePresented = true
+                        } label: {
+                            HStack {
+                                Text("ライセンス")
+                                    .foregroundStyle(.white)
+
+                                Spacer()
+
+                                Image(systemName: "chevron.right")
+                                    .foregroundStyle(.gray)
+                            }
+                        }
+                        .listRowBackground(Color.discordGray)
+                        .navigationDestination(isPresented: $isLicensePresented) {
+                            LicenseView()
+                        }
 
                         HStack {
                             Text("アプリバージョン")

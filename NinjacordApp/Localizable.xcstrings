@@ -180,6 +180,22 @@
         }
       }
     },
+    "ライセンス一覧" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "License List"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライセンス一覧"
+          }
+        }
+      }
+    },
     "名前を入れてください" : {
       "localizations" : {
         "en" : {
