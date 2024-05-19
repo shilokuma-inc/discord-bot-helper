@@ -1,4 +1,4 @@
-# discord-bot-helper
+# NinjacordApp
 
 Discordでbot経由で送信できるアプリ
 
