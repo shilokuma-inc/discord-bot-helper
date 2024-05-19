@@ -2,11 +2,11 @@ name: NinjacordApp
 
 on:
   push:
-    branches: main
+    branches: master
 
 jobs:          
   build:
-    name: Archive | main
+    name: Archive | master
     runs-on: macos-latest
 
     steps:
