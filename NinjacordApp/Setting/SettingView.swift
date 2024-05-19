@@ -13,6 +13,7 @@ struct SettingView: View {
     @EnvironmentObject private var sceneDelegate: MySceneDelegate
     @StateObject private var model = NativeAdModel()
     @State private var isURLSettingPresented = false
+    @State private var isLicensePresented = false
     @State private var isPrivacyPolicyPresented = false
 
     var body: some View {
@@ -25,7 +26,8 @@ struct SettingView: View {
                         Button {
                             isURLSettingPresented = true
                         } label: {
-                            Text("URL設定 (近日公開)")
+                            Text("URL設定")
+                                .addComingSoon()
                                 .foregroundStyle(.white)
                         }
                         .listRowBackground(Color.discordGray)
@@ -39,7 +41,8 @@ struct SettingView: View {
                     })
 
                     Section(content: {
-                        Text("このアプリについて (近日公開)")
+                        Text("このアプリについて")
+                            .addComingSoon()
                             .foregroundStyle(.white)
                             .listRowBackground(Color.discordGray)
 
@@ -61,9 +64,23 @@ struct SettingView: View {
                             PrivacyPolicyView()
                         }
 
-                        Text("ライセンス (近日公開)")
-                            .foregroundStyle(.white)
-                            .listRowBackground(Color.discordGray)
+                        Button {
+                            isLicensePresented = true
+                        } label: {
+                            HStack {
+                                Text("ライセンス")
+                                    .foregroundStyle(.white)
+
+                                Spacer()
+
+                                Image(systemName: "chevron.right")
+                                    .foregroundStyle(.gray)
+                            }
+                        }
+                        .listRowBackground(Color.discordGray)
+                        .navigationDestination(isPresented: $isLicensePresented) {
+                            LicenseView()
+                        }
 
                         HStack {
                             Text("アプリバージョン")

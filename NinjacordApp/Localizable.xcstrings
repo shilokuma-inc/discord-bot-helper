@@ -4,6 +4,22 @@
     "" : {
 
     },
+    " (近日公開)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " (Coming Soon)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " (近日公開)"
+          }
+        }
+      }
+    },
     "URLを入れてください" : {
       "localizations" : {
         "en" : {
@@ -14,7 +30,7 @@
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "URLを入れてください"
           }
         }
@@ -32,22 +48,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "URL設定"
-          }
-        }
-      }
-    },
-    "URL設定 (近日公開)" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "URL Setting (Coming Soon)"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "URL設定 (近日公開)"
           }
         }
       }
@@ -85,7 +85,6 @@
       }
     },
     "このアプリについて" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -97,22 +96,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "このアプリについて"
-          }
-        }
-      }
-    },
-    "このアプリについて (近日公開)" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "About this App (Coming Soon)"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "このアプリについて (近日公開)"
           }
         }
       }
@@ -182,7 +165,6 @@
       }
     },
     "ライセンス" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -198,18 +180,18 @@
         }
       }
     },
-    "ライセンス (近日公開)" : {
+    "ライセンス一覧" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "License (Coming Soon)"
+            "value" : "License List"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ライセンス (近日公開)"
+            "value" : "ライセンス一覧"
           }
         }
       }
