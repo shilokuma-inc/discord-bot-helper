@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ComingSoonModifier: ViewModifier {
     func body(content: Content) -> some View {
-        HStack {
+        HStack(spacing: .zero) {
             content
             Text(" (近日公開)")
         }

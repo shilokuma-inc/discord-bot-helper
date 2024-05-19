@@ -26,6 +26,7 @@ struct SettingView: View {
                             isURLSettingPresented = true
                         } label: {
                             Text("URL設定 (近日公開)")
+                                .addComingSoon()
                                 .foregroundStyle(.white)
                         }
                         .listRowBackground(Color.discordGray)
