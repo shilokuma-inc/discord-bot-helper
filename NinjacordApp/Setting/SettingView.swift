@@ -25,7 +25,8 @@ struct SettingView: View {
                         Button {
                             isURLSettingPresented = true
                         } label: {
-                            Text("URL設定 (近日公開)")
+                            Text("URL設定")
+                                .addComingSoon()
                                 .foregroundStyle(.white)
                         }
                         .listRowBackground(Color.discordGray)
@@ -39,7 +40,8 @@ struct SettingView: View {
                     })
 
                     Section(content: {
-                        Text("このアプリについて (近日公開)")
+                        Text("このアプリについて")
+                            .addComingSoon()
                             .foregroundStyle(.white)
                             .listRowBackground(Color.discordGray)
 
@@ -61,7 +63,8 @@ struct SettingView: View {
                             PrivacyPolicyView()
                         }
 
-                        Text("ライセンス (近日公開)")
+                        Text("ライセンス")
+                            .addComingSoon()
                             .foregroundStyle(.white)
                             .listRowBackground(Color.discordGray)
 
