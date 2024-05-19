@@ -26,7 +26,9 @@ struct SendMessageView: View {
                 .ignoresSafeArea(edges: [.top])
                 .onTapGesture {
                     if self.isEditing {
-                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                        UIApplication.shared.sendAction(
+                            #selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil
+                        )
                         self.isEditing = false
                     }
                 }
