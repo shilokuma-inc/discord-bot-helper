@@ -10,8 +10,16 @@ import LicenseList
 
 struct LicenseView: View {
     var body: some View {
-        List(Library.libraries, id: \.name) { library in
-            Text(library.name)
+        ZStack {
+            Color.discordDarkGray
+                .ignoresSafeArea(edges: [.top])
+            List(Library.libraries, id: \.name) { library in
+                Text(library.name)
+                    .listRowBackground(Color.discordGray)
+                    .foregroundStyle(.white)
+            }
+            .scrollContentBackground(.hidden)
+            .background(.clear)
         }
     }
 }
