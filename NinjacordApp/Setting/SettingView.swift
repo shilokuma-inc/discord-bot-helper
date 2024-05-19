@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import LicenseList
 
 struct SettingView: View {
     let appInfo = AppInfo()
@@ -80,9 +79,7 @@ struct SettingView: View {
                         }
                         .listRowBackground(Color.discordGray)
                         .navigationDestination(isPresented: $isLicensePresented) {
-                            List(Library.libraries, id: \.name) { library in
-                                Text(library.name)
-                            }
+                            LicenseView()
                         }
 
                         HStack {
